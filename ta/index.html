@@ -1,0 +1,2999 @@
+<!DOCTYPE html>
+<html lang="ta">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      அந்நூர் அரபுக் கல்லூரி - இஸ்லாமியக் கல்வியில் சிறந்து விளங்குதல்
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom Animations */
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .animate-fadeInUp {
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #059669;
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #047857;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans antialiased">
+    <!-- Sticky Header with improved shadow -->
+    <header
+      id="header"
+      class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300"
+    >
+      <div class="container mx-auto px-4">
+        <!-- Main header -->
+        <div class="py-3 lg:py-4">
+          <div class="flex items-center justify-between">
+            <!-- Logo section - Simplified -->
+            <a href="#" class="flex items-center space-x-3 group">
+              <div class="relative">
+                <div
+                  class="w-12 h-12 lg:w-14 lg:h-14 bg-emerald-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                >
+                  <span class="text-white font-bold text-xl lg:text-2xl"
+                    >அந்</span
+                  >
+                </div>
+                <div
+                  class="absolute -top-1 -right-1 w-4 h-4 bg-amber-400 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-star text-white text-xs"></i>
+                </div>
+              </div>
+              <div>
+                <h1
+                  class="text-lg lg:text-xl font-bold text-gray-800 leading-tight"
+                >
+                  அந்நூர் அரபுக் கல்லூரி
+                </h1>
+                <p class="text-xs lg:text-sm text-emerald-600 font-medium">
+                  1990 முதல்
+                </p>
+              </div>
+            </a>
+
+            <!-- Desktop navigation - Cleaner design -->
+            <nav class="hidden lg:flex items-center space-x-1">
+              <a
+                href="#about"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-info-circle"></i>
+                <span>எம்மைப் பற்றி</span>
+              </a>
+              <a
+                href="#academics"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-graduation-cap"></i>
+                <span>கல்வி</span>
+              </a>
+              <a
+                href="#facilities"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-building"></i>
+                <span>வசதிகள்</span>
+              </a>
+              <a
+                href="#administration"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-users-cog"></i>
+                <span>நிர்வாகம்</span>
+              </a>
+              <a
+                href="#contact"
+                class="flex items-center space-x-2 ml-2 bg-emerald-600 text-white hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-semibold shadow-sm hover:shadow-md transition-all duration-200"
+              >
+                <i class="fas fa-envelope"></i>
+                <span>தொடர்பு</span>
+              </a>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <button
+              id="mobile-menu-button"
+              class="lg:hidden text-gray-700 p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              aria-label="Toggle menu"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile navigation - Improved -->
+        <nav id="mobile-menu" class="hidden lg:hidden pb-4 animate-fadeInUp">
+          <div class="bg-gray-50 rounded-xl p-4 space-y-2">
+            <a
+              href="#about"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-info-circle w-5"></i>
+              <span>எம்மைப் பற்றி</span>
+            </a>
+            <a
+              href="#academics"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-graduation-cap w-5"></i>
+              <span>கல்வி</span>
+            </a>
+            <a
+              href="#facilities"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-building w-5"></i>
+              <span>வசதிகள்</span>
+            </a>
+            <a
+              href="#administration"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-users-cog w-5"></i>
+              <span>நிர்வாகம்</span>
+            </a>
+            <a
+              href="#contact"
+              class="flex items-center justify-center space-x-2 py-3 px-4 bg-emerald-600 text-white hover:bg-emerald-700 rounded-lg transition-all font-medium text-center"
+            >
+              <i class="fas fa-envelope"></i>
+              <span>தொடர்பு</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section - Cleaner, More Modern -->
+    <section
+      class="relative bg-gradient-to-br from-emerald-50 to-teal-50 overflow-hidden"
+    >
+      <!-- Subtle background pattern -->
+      <div class="absolute inset-0 opacity-[0.03]">
+        <div
+          class="absolute inset-0"
+          style="
+            background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23059669\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+          "
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 py-16 sm:py-24 lg:py-32 relative">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Content - Better typography -->
+          <div class="text-center lg:text-left">
+            <!-- Badge -->
+            <div
+              class="inline-flex items-center bg-white px-4 py-2 rounded-full shadow-sm mb-6"
+            >
+              <i class="fas fa-star text-amber-500 mr-2"></i>
+              <span class="text-gray-700 font-medium text-sm"
+                >நிறுவப்பட்டது 1990 • 30+ வருடங்கள்</span
+              >
+            </div>
+
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+            >
+              <span class="text-gray-900">நாளைய</span>
+              <span class="block text-emerald-600">இஸ்லாமிய அறிஞர்களை</span>
+              <span class="text-gray-900">வளர்ப்போம்</span>
+            </h1>
+
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+              இலங்கையில் இஸ்லாமியக் கல்வியின் ஒரு கலங்கரை விளக்கமாக, இஸ்லாமிய
+              அறிவைப் பாதுகாத்து வளர்க்க அர்ப்பணிப்புடன் தலைமுறை தலைமுறையாக
+              அறிஞர்களை உருவாக்குகிறோம்.
+            </p>
+
+            <!-- Stats - Simplified -->
+            <div
+              class="flex flex-wrap justify-center lg:justify-start gap-8 mb-8"
+            >
+              <div>
+                <div class="text-3xl font-bold text-emerald-600">30+</div>
+                <div class="text-sm text-gray-600">வருடங்கள்</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-emerald-600">250+</div>
+                <div class="text-sm text-gray-600">மாணவர்கள்</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-emerald-600">100+</div>
+                <div class="text-sm text-gray-600">பட்டதாரிகள்</div>
+              </div>
+            </div>
+
+            <!-- CTA Buttons - Better hierarchy -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="#about"
+                class="inline-flex items-center justify-center bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-emerald-700 transition-all shadow-lg hover:shadow-xl"
+              >
+                <span>எமது நிகழ்ச்சிகளை ஆராயுங்கள்</span>
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-all"
+              >
+                <i class="fas fa-phone mr-2"></i>
+                <span>எங்களைத் தொடர்பு கொள்ளுங்கள்</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image - Cleaner design -->
+          <div class="relative">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://placehold.co/600x500/059669/ffffff?text=இஸ்லாமிய+கல்வி"
+                alt="இஸ்லாமிய கல்வி"
+                class="w-full h-auto"
+              />
+              <!-- Overlay badge -->
+              <div
+                class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-2xl font-bold text-emerald-600">250+</div>
+                    <div class="text-sm text-gray-600">
+                      செயலில் உள்ள மாணவர்கள்
+                    </div>
+                  </div>
+                  <div
+                    class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center"
+                  >
+                    <i
+                      class="fas fa-graduation-cap text-emerald-600 text-xl"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating element -->
+            <div
+              class="absolute -top-6 -right-6 bg-amber-400 p-4 rounded-2xl shadow-xl animate-float hidden lg:block"
+            >
+              <i class="fas fa-award text-white text-2xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section - Better readability -->
+    <section id="about" class="py-16 sm:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <!-- Section Header - Cleaner -->
+          <div class="text-center mb-16">
+            <span
+              class="inline-block px-4 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold mb-4"
+            >
+              எமது கதை
+            </span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              எமது வரலாறு மற்றும் நோக்கம்
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              இஸ்லாமியக் கல்வி மற்றும் ஆன்மீக வளர்ச்சிக்கான மூன்று தசாப்தங்களின்
+              அசைக்க முடியாத அர்ப்பணிப்பு
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <!-- Image -->
+            <div class="relative">
+              <div class="rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src="https://placehold.co/500x400/059669/ffffff?text=கல்லூரி+கட்டடம்"
+                  alt="கல்லூரி கட்டடம்"
+                  class="w-full h-auto"
+                />
+              </div>
+              <!-- Badge -->
+              <div
+                class="absolute top-4 left-4 bg-white px-4 py-2 rounded-full shadow-lg"
+              >
+                <span class="font-bold text-emerald-600"
+                  >நிறுவப்பட்டது 1990</span
+                >
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-6">
+              <!-- Mission -->
+              <div
+                class="bg-emerald-50 p-6 rounded-xl border-l-4 border-emerald-600"
+              >
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-3 flex items-center"
+                >
+                  <i class="fas fa-bullseye text-emerald-600 mr-3"></i>
+                  எமது புனித நோக்கம்
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                  இஸ்லாம் என்பது கால மாற்றங்களுக்கும், அதன் மூலம் ஏற்படுகின்ற
+                  சமூகத் தேவைகளுக்கும் ஈடுகொடுக்கும் வகையில் அருள் பெற்ற
+                  உயிரோட்டமுள்ள மார்க்கமாகும். இக்கால ஓட்டத்தில் எமது தாய் நாடான
+                  இலங்கையில் இஸ்லாம் உயிர்ப்புள்ள மார்க்கமாகத் திகழ வேண்டும்
+                  என்ற உயரிய நோக்கில் எமது நிறுவனத்தை உருவாக்கினோம்.
+                </p>
+              </div>
+
+              <!-- History -->
+              <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-600">
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-3 flex items-center"
+                >
+                  <i class="fas fa-history text-blue-600 mr-3"></i>
+                  எமது தாழ்மையான தொடக்கம்
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                  1990-களின் முதற்பகுதியில் சியம்பலாகஸ்கொட்டுவ ஜும்ஆ மஸ்ஜிதில்
+                  தொடங்கப்பட்டு, நூற்றுக்கணக்கான மாணவர்களுக்கு சேவை செய்யும்
+                  மதிப்புமிக்க நிறுவனமாக வளர்ந்துள்ளது.
+                </p>
+              </div>
+
+              <!-- Key stat -->
+              <div
+                class="flex items-center space-x-4 p-4 bg-gray-50 rounded-xl"
+              >
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-users text-white"></i>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-gray-900">100+</div>
+                  <div class="text-sm text-gray-600">
+                    சமூகத்துக்கு சேவை செய்யும் வெற்றிகரமான பட்டதாரிகள்
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline - Complete Milestones -->
+          <div class="bg-gray-50 p-8 lg:p-12 rounded-2xl">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+              முக்கிய மைல்கற்கள் காலவரிசை
+            </h3>
+            <p class="text-gray-600 text-center mb-10">
+              வளர்ச்சி, அர்ப்பணிப்பு மற்றும் சாதனையின் பயணம்
+            </p>
+
+            <div class="space-y-6">
+              <!-- 1990 - Founded -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-emerald-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1990
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-emerald-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-seedling text-emerald-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">நிறுவப்பட்டது</h4>
+                  </div>
+                  <p class="text-gray-600">
+                    சியம்பலாகஸ்கொட்டுவ ஜும்ஆ மஸ்ஜிதில் 15 மாணவர்கள் மற்றும் 1
+                    ஆசிரியருடன் தொடங்கப்பட்டது
+                  </p>
+                  <div class="mt-2 text-sm text-emerald-600 font-medium">
+                    ஒரு மரபின் தொடக்கம்
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1991 - First Land Donation -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1991
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-blue-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-handshake text-blue-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">
+                      முதல் நில அன்பளிப்பு
+                    </h4>
+                  </div>
+                  <p class="text-gray-600">
+                    அல்-ஹாஜ் அஹ்மத் லெப்பை மத்திஸம் அவர்களிடமிருந்து (40
+                    பேர்ச்சஸ்)
+                  </p>
+                  <div class="mt-2 text-sm text-blue-600 font-medium">
+                    சமூக ஆதரவு
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1993 - International Recognition -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-purple-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1993
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-purple-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-graduation-cap text-purple-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">சர்வதேச அங்கீகாரம்</h4>
+                  </div>
+                  <p class="text-gray-600">
+                    எகிப்து அல்-அஸ்ஹர் பல்கலைக்கழகத்திற்கு முதல் மாணவர்
+                    புலமைப்பரிசில்
+                  </p>
+                  <div class="mt-2 text-sm text-purple-600 font-medium">
+                    உலகளாவிய சிறப்பு
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1995 - Foundation Stone -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-amber-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1995
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-amber-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-tools text-amber-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">
+                      அடிக்கல் நாட்டப்பட்டது
+                    </h4>
+                  </div>
+                  <p class="text-gray-600">
+                    அஷ்-ஷேக் ரிஸ்வி (முஃப்தி) அவர்களால் முதல் கட்டடத்திற்கு
+                  </p>
+                  <div class="mt-2 text-sm text-amber-600 font-medium">
+                    எதிர்காலத்தை கட்டியெழுப்புதல்
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1996 - First Graduation -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-teal-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1996
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-teal-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-trophy text-teal-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">முதல் பட்டமளிப்பு</h4>
+                  </div>
+                  <p class="text-gray-600">
+                    4 மாணவர்கள் 'அந்நூரி' பட்டங்களைப் பெற்றனர்
+                  </p>
+                  <div class="mt-2 text-sm text-teal-600 font-medium">
+                    முதல் வெற்றி
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1999 - Major Expansion -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-rose-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1999
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-rose-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-expand-arrows-alt text-rose-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">பெரிய விரிவாக்கம்</h4>
+                  </div>
+                  <p class="text-gray-600">
+                    சவூதி தொழிலதிபர் அப்துல்லாஹ் பின் மன்ஸூர் ஸாமில் நிலத்தை 200
+                    பேர்ச்சஸாக விரிவுபடுத்தினார்
+                  </p>
+                  <div class="mt-2 text-sm text-rose-600 font-medium">
+                    தாராள ஆதரவு
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2000 - Modern Campus -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-cyan-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    2000
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-cyan-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-university text-cyan-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">நவீன வளாகம்</h4>
+                  </div>
+                  <p class="text-gray-600">
+                    நிரந்தர வளாகத்திற்கு இடமாற்றப்பட்டு நவீன வசதிகளுடன்
+                  </p>
+                  <div class="mt-2 text-sm text-cyan-600 font-medium">
+                    புதிய சகாப்தம் தொடங்குகிறது
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="py-12 sm:py-16 lg:py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-2xl mb-6"
+            >
+              <i class="fas fa-map-marked-alt text-blue-600 text-2xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              எமது <span class="text-blue-600">அமைவிடம்</span>
+            </h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+              இலங்கையின் கல்வி நிலப்பரப்பின் மையத்தில் மூலோபாய ரீதியாக
+              அமைந்துள்ளது
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+            <!-- Map Section -->
+            <div class="relative">
+              <div
+                class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl shadow-xl p-8"
+              >
+                <img
+                  src="https://placehold.co/500x350/4a5568/ffffff?text=இலங்கை+வரைபடம்"
+                  alt="அமைவிட வரைபடம்"
+                  class="w-full h-64 object-cover rounded-xl shadow-lg"
+                />
+
+                <!-- Location Pin -->
+                <div
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                >
+                  <div
+                    class="w-8 h-8 bg-red-500 rounded-full shadow-lg border-4 border-white"
+                  ></div>
+                </div>
+
+                <!-- Floating Badge -->
+                <div
+                  class="absolute top-8 left-8 bg-emerald-600 text-white px-4 py-2 rounded-full shadow-lg"
+                >
+                  <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    <span class="font-bold text-sm">சிறந்த அமைவிடம்</span>
+                  </div>
+                </div>
+
+                <!-- Distance -->
+                <div
+                  class="absolute bottom-8 right-8 bg-white px-4 py-3 rounded-lg shadow-lg"
+                >
+                  <div class="flex items-center text-gray-700">
+                    <i class="fas fa-route text-blue-600 mr-2"></i>
+                    <div class="text-sm">
+                      <div class="font-bold">90 கி.மீ.</div>
+                      <div class="text-xs text-gray-500">கொழும்பிலிருந்து</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-8">
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-blue-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-mosque text-blue-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold text-gray-900">
+                      சியம்பலாகஸ்கொட்டுவ
+                    </h3>
+                    <p class="text-blue-600 font-medium">
+                      எமது அமைதியான வளாக அமைவிடம்
+                    </p>
+                  </div>
+                </div>
+
+                <div class="space-y-4 text-gray-700 leading-relaxed">
+                  <p class="text-lg">
+                    கல்லூரி தேசிய தலைநகரான கொழும்பிலிருந்து சுமார்
+                    <span class="font-bold text-blue-600">90 கி.மீ.</span>
+                    தொலைவில்,
+                    <span class="font-semibold">வடமேல் மாகாணத்தில்</span>
+                    அமைந்துள்ளது.
+                  </p>
+                  <p class="text-lg">
+                    இது
+                    <span class="font-semibold">குருநாகல் மாவட்டத்தில்</span>,
+                    <span class="font-semibold"
+                      >குளியாப்பிட்டிய தேர்தல் தொகுதிக்குள்</span
+                    >
+                    அமைந்துள்ளது.
+                  </p>
+                </div>
+
+                <div
+                  class="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-200"
+                >
+                  <div class="flex items-center text-blue-800">
+                    <i class="fas fa-map-marker-alt mr-3 text-xl"></i>
+                    <div>
+                      <div class="font-bold text-lg">சியம்பலாகஸ்கொட்டுவ</div>
+                      <div class="text-sm text-blue-600">
+                        குருநாகல் மாவட்டம், இலங்கை
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-purple-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-star text-purple-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold text-gray-900">
+                      மூலோபாய நன்மைகள்
+                    </h3>
+                    <p class="text-purple-600 font-medium">
+                      எமது அமைவிடம் ஏன் முக்கியம்
+                    </p>
+                  </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl hover:bg-white transition-colors"
+                  >
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center mr-3"
+                      >
+                        <i class="fas fa-check text-emerald-600 text-sm"></i>
+                      </div>
+                      <span class="font-semibold text-gray-900"
+                        >அமைதியான சூழல்</span
+                      >
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      கவனம் செலுத்திய கற்றலுக்கும் ஆன்மீக வளர்ச்சிக்கும் ஏற்ற
+                      அமைதியான சூழல்
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl hover:bg-white transition-colors"
+                  >
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3"
+                      >
+                        <i class="fas fa-check text-blue-600 text-sm"></i>
+                      </div>
+                      <span class="font-semibold text-gray-900"
+                        >முஸ்லிம் பெரும்பான்மை கிராமம்</span
+                      >
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      இஸ்லாமிய மதிப்புகளை வளர்க்கும் ஆதரவான சமூக சூழல்
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl hover:bg-white transition-colors"
+                  >
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-3"
+                      >
+                        <i class="fas fa-check text-orange-600 text-sm"></i>
+                      </div>
+                      <span class="font-semibold text-gray-900"
+                        >சிறந்த இணைப்பு</span
+                      >
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      பிரதான சாலைகள் மற்றும் பொது போக்குவரத்து மூலம் எளிதான
+                      அணுகல்
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl hover:bg-white transition-colors"
+                  >
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center mr-3"
+                      >
+                        <i class="fas fa-check text-teal-600 text-sm"></i>
+                      </div>
+                      <span class="font-semibold text-gray-900"
+                        >பிரதான பள்ளிகளுக்கு அருகில்</span
+                      >
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      மதீனா தேசிய பாடசாலைக்கும் ஜலாலுல்லாஹ் ஜும்ஆ மஸ்ஜிதுக்கும்
+                      அருகாமையில்
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Features -->
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-bus text-emerald-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                எளிதான அணுகல்
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                நாரம்மல-வாரியப்பொல பிரதான வீதியில் சிறந்த பொது போக்குவரத்து
+                இணைப்புகளுடன் அமைந்துள்ளது
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-users text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                வலுவான சமூகம்
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                வளமான கலாச்சார பாரம்பரியம் மற்றும் ஆதரவுடன் கூடிய துடிப்பான
+                முஸ்லிம் பெரும்பான்மை கிராமத்தில் அமைந்துள்ளது
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-leaf text-purple-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                அமைதியான சூழல்
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                நகர திசைதிருப்பல்களிலிருந்து விலகி, கவனம் செலுத்திய இஸ்லாமியக்
+                கல்விக்கு ஏற்ற அமைதியான சூழல்
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Programs Section -->
+    <section id="academics" class="py-12 sm:py-16 lg:py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-6"
+            >
+              <i class="fas fa-graduation-cap text-emerald-600 text-2xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              கல்வி <span class="text-emerald-600">சிறப்பு</span>
+            </h2>
+            <div
+              class="w-24 h-1 bg-emerald-600 mx-auto rounded-full mb-6"
+            ></div>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+              நவீன கற்பித்தல் அணுகுமுறைகளுடன் விரிவான இஸ்லாமியக் கல்வி
+            </p>
+          </div>
+
+          <!-- Program Highlights -->
+          <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Qur'an -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-quran text-3xl text-emerald-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                குர்ஆன் மனனம்
+              </h3>
+              <p class="text-gray-700 mb-4">
+                3 வருடங்களில் 30 ஜுஸ் மனனம் செய்யும் முழுமையான ஹிஃப்ஸ் நிகழ்ச்சி
+              </p>
+              <div class="flex items-center text-emerald-600 font-semibold">
+                <i class="fas fa-clock mr-2"></i>
+                3-வருட நிகழ்ச்சி
+              </div>
+            </div>
+
+            <!-- Shari'ah -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-balance-scale text-3xl text-blue-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                ஷரீஆக் படிப்புகள்
+              </h3>
+              <p class="text-gray-700 mb-4">
+                விரிவான இஸ்லாமிய சட்டம் மற்றும் இறையியல் கல்வி
+              </p>
+              <div class="flex items-center text-blue-600 font-semibold">
+                <i class="fas fa-book mr-2"></i>
+                மேம்பட்ட பாடத்திட்டம்
+              </div>
+            </div>
+
+            <!-- Arabic -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-language text-3xl text-purple-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">அரபு மொழி</h3>
+              <p class="text-gray-700 mb-4">
+                மேம்பட்ட அரபு இலக்கணம், வடிவியல் மற்றும் இலக்கியம்
+              </p>
+              <div class="flex items-center text-purple-600 font-semibold">
+                <i class="fas fa-pen-fancy mr-2"></i>
+                முழுமையான தேர்ச்சி
+              </div>
+            </div>
+          </div>
+
+          <!-- Program Details -->
+          <div class="bg-gray-50 p-8 lg:p-12 rounded-2xl mb-16">
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-calendar-alt text-emerald-600 mr-3"></i>
+                9-வருட விரிவான நிகழ்ச்சி
+              </h3>
+              <p class="text-gray-700 text-lg">
+                மனனத்திலிருந்து அறிவுநிலை வரையிலான முழுமையான கல்விப் பயணம்
+              </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+              <!-- Hifz Program -->
+              <div
+                class="bg-white p-8 rounded-xl border-l-4 border-emerald-600 shadow-sm"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-quran text-emerald-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl font-bold text-gray-900">
+                      முதல் 3 வருடங்கள்
+                    </h4>
+                    <p class="text-emerald-600 font-medium">
+                      ஹிஃப்ஸ் நிகழ்ச்சி (மனனம்)
+                    </p>
+                  </div>
+                </div>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >குர்ஆன் ஓதுதல் மற்றும் மனனம்</span
+                      >
+                      <p class="text-gray-600 text-sm">
+                        (வருடத்திற்கு 6-12 ஜுஸ்)
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >முழுமையான பாடசாலை பாடத்திட்டம்</span
+                      >
+                      <p class="text-gray-600 text-sm">(6-8 ஆம் ஆண்டுகள்)</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >அல்-ஹாபிஸ் சான்றிதழ்</span
+                      >
+                      <p class="text-gray-600 text-sm">நிறைவு செய்த பின்</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Advanced Studies -->
+              <div
+                class="bg-white p-8 rounded-xl border-l-4 border-blue-600 shadow-sm"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-university text-blue-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl font-bold text-gray-900">
+                      மேம்பட்ட வருடங்கள் (4-9)
+                    </h4>
+                    <p class="text-blue-600 font-medium">ஷரீஆக் படிப்புகள்</p>
+                  </div>
+                </div>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >மேம்பட்ட ஷரீஆக் பாடத்திட்டம்</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >க.பொ.த. சாதாரண தர மற்றும் உயர்தர பரீட்சைகள்</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >அஹதிய்யா பரீட்சை சான்றிதழ்</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >தர்மாச்சார்ய பரீட்சை சான்றிதழ்</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >அல்-ஆலிம் முதவஸ்ஸிதா சான்றிதழ்</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >அல்-ஆலிம் ஸானவிய்யா சான்றிதழ்</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >ஷரீஆ உயர்தர சான்றிதழ் (மௌலவி, அல்-ஆலிம்)</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >கணினி பயிற்சி மற்றும் தொழில்நுட்ப திறன்கள்</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Qualifications Portfolio -->
+          <div class="bg-gray-50 p-8 lg:p-12 rounded-2xl">
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-award text-amber-600 mr-3"></i>
+                முழுமையான தகுதி போர்ட்ஃபோலியோ
+              </h3>
+              <p class="text-gray-700 text-lg mb-6">
+                மாணவர்கள் ஈர்க்கக்கூடிய தகுதிகளின் வரிசையுடன் பட்டம்
+                பெறுகிறார்கள்
+              </p>
+              <div
+                class="inline-flex items-center bg-amber-100 px-6 py-3 rounded-full border border-amber-200"
+              >
+                <i class="fas fa-trophy text-amber-600 mr-2"></i>
+                <span class="font-bold text-amber-800"
+                  >9 விரிவான சான்றிதழ்கள்</span
+                >
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-emerald-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-quran text-emerald-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >குர்ஆன் மனனம்</span
+                    >
+                    <p class="text-emerald-600 text-xs">(ஹாபிஸ்) சான்றிதழ்</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-blue-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-graduation-cap text-blue-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >க.பொ.த. சாதாரண தரம்</span
+                    >
+                    <p class="text-blue-600 text-xs">(சாதாரண தர) சான்றிதழ்</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-green-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-certificate text-green-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >அஹதிய்யா பரீட்சை</span
+                    >
+                    <p class="text-green-600 text-xs">சான்றிதழ்</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-purple-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-mosque text-purple-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >தர்மாச்சார்ய</span
+                    >
+                    <p class="text-purple-600 text-xs">பரீட்சை சான்றிதழ்</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-emerald-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-book text-emerald-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >அல்-ஆலிம் முதவஸ்ஸிதா</span
+                    >
+                    <p class="text-emerald-600 text-xs">சான்றிதழ்</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-teal-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-book-open text-teal-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >அல்-ஆலிம் ஸானவிய்யா</span
+                    >
+                    <p class="text-teal-600 text-xs">சான்றிதழ்</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-amber-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-user-graduate text-amber-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >ஷரீஆ உயர்தரம்</span
+                    >
+                    <p class="text-amber-600 text-xs">(மௌலவி, அல்-ஆலிம்)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-indigo-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-trophy text-indigo-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >க.பொ.த. உயர்தரம்</span
+                    >
+                    <p class="text-indigo-600 text-xs">(உயர்தர) சான்றிதழ்</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-cyan-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-laptop text-cyan-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm">கணினி</span>
+                    <p class="text-cyan-600 text-xs">சான்றிதழ்</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section - Modern cards -->
+    <section id="facilities" class="py-12 sm:py-16 lg:py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-2xl mb-6"
+            >
+              <i class="fas fa-building text-orange-600 text-2xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              உலகத்தரம் <span class="text-orange-600">வசதிகள்</span>
+            </h2>
+            <div class="w-24 h-1 bg-orange-600 mx-auto rounded-full mb-6"></div>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+              முழுமையான கல்வி மற்றும் வசதியான வாழ்க்கைக்காக வடிவமைக்கப்பட்ட நவீன
+              உள்கட்டமைப்பு
+            </p>
+          </div>
+
+          <!-- Main Facilities Grid -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- Classroom -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-orange-600"
+            >
+              <div
+                class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i
+                  class="fas fa-chalkboard-teacher text-3xl text-orange-600"
+                ></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                நவீன வகுப்பறைகள்
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                நவீன கற்பித்தல் உதவிகள் மற்றும் வசதியான கற்றல் சூழலுடன் கூடிய
+                நன்கு உபகரணம் செய்யப்பட்ட, குளிரூட்டப்பட்ட வகுப்பறைகள்
+              </p>
+            </div>
+
+            <!-- Mosque -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-emerald-600"
+            >
+              <div
+                class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-mosque text-3xl text-emerald-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                தொழுகை வசதிகள்
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                தினசரி தொழுகைகள், ஆன்மீக வளர்ச்சி மற்றும் கூட்டுத் தொழுகைக்கான
+                அழகிய இரு மாடி மஸ்ஜித்
+              </p>
+            </div>
+
+            <!-- Dormitory -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-600"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-bed text-3xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                வசதியான விடுதிகள்
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                மாணவர்களின் வசதிக்காக தேவையான அனைத்து வசதிகளுடன் கூடிய
+                பாதுகாப்பான, பாதுகாப்பான மூன்று மாடி உள்ளிருப்பு வசதிகள்
+              </p>
+            </div>
+
+            <!-- Library -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-purple-600"
+            >
+              <div
+                class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-book-reader text-3xl text-purple-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                இஸ்லாமிய நூலகம்
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                ஆராய்ச்சி மற்றும் படிப்புக்காக பல மொழிகளில் இஸ்லாமிய மற்றும்
+                கல்வி இலக்கியங்களின் விரிவான தொகுப்பு
+              </p>
+            </div>
+
+            <!-- Dining -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-teal-600"
+            >
+              <div
+                class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-utensils text-3xl text-teal-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                சாப்பாட்டு அறை
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                சுகாதார நிலைமைகளின் கீழ் தயாரிக்கப்படும் சத்தான, சத்தான உணவுகளை
+                வழங்கும் விசாலமான இரு மாடி சாப்பாட்டு பகுதி
+              </p>
+            </div>
+
+            <!-- Computer Lab -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-indigo-600"
+            >
+              <div
+                class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-laptop text-3xl text-indigo-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                கணினி ஆய்வகம்
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                டிஜிட்டல் கல்வி அறிவு மற்றும் தொழில்நுட்ப திறன்கள் பயிற்சிக்காக
+                சமீபத்திய கணினிகளுடன் த equipped கருவான நவீன தொழில்நுட்ப மையம்
+              </p>
+            </div>
+          </div>
+
+          <!-- Campus Infrastructure -->
+          <div class="bg-white p-8 lg:p-12 rounded-2xl shadow-lg">
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-building text-orange-600 mr-3"></i>
+                வளாக உள்கட்டமைப்பு
+              </h3>
+              <p class="text-gray-700 text-lg">
+                200 பேர்ச்சஸ் நிலத்தில் கட்டப்பட்ட விரிவான வசதிகள்
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <!-- Buildings & Facilities -->
+              <div
+                class="bg-gray-50 p-8 rounded-xl border-l-4 border-orange-600"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-city text-orange-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl font-bold text-gray-900">
+                      கட்டடங்கள் மற்றும் வசதிகள்
+                    </h4>
+                    <p class="text-orange-600 font-medium">
+                      அதிநவீன உள்கட்டமைப்பு
+                    </p>
+                  </div>
+                </div>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >மொத்த நிலப்பரப்பு:</span
+                      >
+                      <p class="text-gray-700">
+                        கவனமாக மேம்படுத்தப்பட்ட 200 பேர்ச்சஸ் வளாகம்
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >இரு மாடி வகுப்பறை கட்டடம்:</span
+                      >
+                      <p class="text-gray-700">
+                        நவீன வசதிகளுடன் 26 அடி × 125 அடி
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >இரு மாடி மஸ்ஜித்:</span
+                      >
+                      <p class="text-gray-700">
+                        கூட்டுத் தொழுகைக்காக 30 அடி × 40 அடி
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >மூன்று மாடி விடுதி:</span
+                      >
+                      <p class="text-gray-700">
+                        முழு உள்ளிருப்பு வசதிகளுடன் 30 அடி × 125 அடி
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >இரு மாடி சாப்பாட்டு அறை:</span
+                      >
+                      <p class="text-gray-700">
+                        30 அடி × 40 அடி விசாலமான சாப்பாட்டு பகுதி
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Additional Facilities -->
+              <div class="bg-gray-50 p-8 rounded-xl border-l-4 border-blue-600">
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-home text-blue-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl font-bold text-gray-900">
+                      கூடுதல் வசதிகள்
+                    </h4>
+                    <p class="text-blue-600 font-medium">ஆதரவு உள்கட்டமைப்பு</p>
+                  </div>
+                </div>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >பல்நோக்கு கட்டடம்:</span
+                      >
+                      <p class="text-gray-700">
+                        பல்வேறு செயல்பாடுகளுக்கு 30 அடி × 134 அடி
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >ஹிஃப்ஸ் பிரிவு:</span
+                      >
+                      <p class="text-gray-700">
+                        குர்ஆன் மனனம் செய்யும் பகுதி 25 அடி × 110 அடி
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >ஆசிரியர் வீடுகள்:</span
+                      >
+                      <p class="text-gray-700">
+                        வளாகத்தில் உள்ள கற்பித்தல் ஊழியர்களுக்கான வசதியான
+                        குடியிருப்புகள்
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >பழைய மாணவர்கள் அலுவலகம்:</span
+                      >
+                      <p class="text-gray-700">
+                        பட்டதாரி உறவுகள் மற்றும் ஆதரவுக்கான பிரத்யேக இடம்
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >நவீன வரவேற்பு:</span
+                      >
+                      <p class="text-gray-700">
+                        தொழில்முறை பார்வையாளர் மற்றும் நிர்வாக பகுதி
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Administration Section - Complete -->
+    <section id="administration" class="py-12 sm:py-16 lg:py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-6"
+            >
+              <i class="fas fa-user-tie text-emerald-600 text-2xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              தலைமை மற்றும் <span class="text-emerald-600">நிர்வாகம்</span>
+            </h2>
+            <div
+              class="w-24 h-1 bg-emerald-600 mx-auto rounded-full mb-6"
+            ></div>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+              ஞானம் மற்றும் அர்ப்பணிப்புடன் எமது நிறுவனத்தை வழிநடத்தும் அனுபவம்
+              வாய்ந்த தலைமை
+            </p>
+          </div>
+
+          <!-- Principal Card -->
+          <div class="bg-gray-50 p-8 lg:p-12 rounded-2xl shadow-lg mb-16">
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div
+                  class="w-48 h-48 mx-auto bg-emerald-100 rounded-2xl flex items-center justify-center"
+                >
+                  <i class="fas fa-user-tie text-6xl text-emerald-600"></i>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold mb-4"
+                >
+                  அதிபர்
+                </div>
+                <h3 class="text-3xl font-bold text-gray-900 mb-2">
+                  அஷ்-ஷேக் எஸ்.டி. முனவ்வர்
+                </h3>
+                <p class="text-gray-700 mb-6 text-lg">
+                  1990 முதல் அர்ப்பணிப்பு மற்றும் தொலைநோக்குப் பார்வையுடன் எமது
+                  நிறுவனத்தை வழிநடத்துகிறார்
+                </p>
+                <div class="space-y-3">
+                  <div class="flex items-center text-gray-700">
+                    <i class="fas fa-award text-emerald-600 mr-3 text-lg"></i>
+                    <span>தீனி, பின்னூரி தகுதிகள்</span>
+                  </div>
+                  <div class="flex items-center text-gray-700">
+                    <i class="fas fa-clock text-emerald-600 mr-3 text-lg"></i>
+                    <span>30+ வருட சேவை</span>
+                  </div>
+                  <div class="flex items-center text-gray-700">
+                    <i
+                      class="fas fa-university text-emerald-600 mr-3 text-lg"
+                    ></i>
+                    <span>தீனியா மற்றும் ஜாமிஆ பின்னூரியாவின் பட்டதாரி</span>
+                  </div>
+                </div>
+                <div
+                  class="mt-6 p-4 bg-emerald-50 rounded-xl border border-emerald-200"
+                >
+                  <div class="flex items-center text-emerald-800">
+                    <i class="fas fa-star mr-3 text-xl"></i>
+                    <div>
+                      <div class="font-bold text-lg">தொலைநோக்குத் தலைமை</div>
+                      <div class="text-sm text-emerald-600">
+                        தொடக்கம் முதல் நிறுவனத்தை வழிநடத்துதல்
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chairman and Student Strength -->
+          <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Chairman Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-600"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-chair text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900">தலைவர்</h3>
+                  <p class="text-blue-600 font-medium">நிர்வாகத் தலைமை</p>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-xl mb-4">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  ஏ.எச்.எம். ஹனீபா
+                </h4>
+                <p class="text-gray-700 leading-relaxed">
+                  மதீனா தேசிய பாடசாலையின் முன்னாள் பிரதி அதிபர், எமது
+                  நிறுவனத்திற்கு விரிவான கல்வி நிர்வாக அனுபவத்தை கொண்டு
+                  வருகிறார்.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-50 p-3 rounded-lg text-center">
+                  <i
+                    class="fas fa-chalkboard-teacher text-blue-600 mb-2 text-lg"
+                  ></i>
+                  <div class="text-sm font-semibold text-blue-800">
+                    கல்வி நிபுணர்
+                  </div>
+                </div>
+                <div class="bg-indigo-50 p-3 rounded-lg text-center">
+                  <i class="fas fa-users text-indigo-600 mb-2 text-lg"></i>
+                  <div class="text-sm font-semibold text-indigo-800">
+                    சமூகத் தலைவர்
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Student Strength Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-emerald-600"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-user-graduate text-emerald-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900">
+                    மாணவர் சமூகம்
+                  </h3>
+                  <p class="text-emerald-600 font-medium">தற்போதைய சேர்க்கை</p>
+                </div>
+              </div>
+
+              <div class="text-center mb-6">
+                <div
+                  class="inline-flex items-center justify-center w-24 h-24 bg-emerald-600 rounded-full mb-4 shadow-lg"
+                >
+                  <span class="text-3xl font-bold text-white">250</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  அர்ப்பணிப்புள்ள மாணவர்கள்
+                </h4>
+                <p class="text-gray-700 leading-relaxed">
+                  அர்ப்பணிப்பு மற்றும் சிறப்புடன் இஸ்லாமியக் கல்வியைத் தொடரும்
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-emerald-50 p-3 rounded-lg text-center">
+                  <i class="fas fa-mosque text-emerald-600 mb-2 text-lg"></i>
+                  <div class="text-sm font-semibold text-emerald-800">
+                    இஸ்லாமிய மதிப்புகள்
+                  </div>
+                </div>
+                <div class="bg-green-50 p-3 rounded-lg text-center">
+                  <i class="fas fa-book text-green-600 mb-2 text-lg"></i>
+                  <div class="text-sm font-semibold text-green-800">
+                    கல்வி சிறப்பு
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Administrative Board -->
+          <div class="bg-gray-50 p-8 lg:p-12 rounded-2xl shadow-lg">
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-users text-emerald-600 mr-3"></i>
+                நிர்வாக வாரியம்
+              </h3>
+              <p class="text-gray-700 text-lg mb-6">
+                கல்லூரி படித்த, பண்பட்ட மற்றும் திறமையான நிர்வாக வாரியத்தால்
+                நிர்வகிக்கப்படுகிறது
+              </p>
+              <div
+                class="inline-flex items-center bg-emerald-100 px-6 py-3 rounded-full border border-emerald-200"
+              >
+                <i class="fas fa-handshake text-emerald-600 mr-2"></i>
+                <span class="font-bold text-emerald-800">கூட்டுத் தலைமை</span>
+              </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 mb-12">
+              <!-- Key Members -->
+              <div
+                class="bg-white p-8 rounded-xl border-l-4 border-emerald-600 shadow-sm"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-key text-emerald-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-900">
+                      முக்கிய உறுப்பினர்கள்
+                    </h4>
+                    <p class="text-emerald-600 font-medium">வாரியத் தலைமை</p>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >அல்-ஹாஜ் ஏ.டீ. அப்துர் ரவூப்</span
+                      >
+                      <p class="text-emerald-600 text-sm">உப தலைவர்</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >அல்-ஹாஜ் ஏ.எஸ்.எம். பாயிஸ்</span
+                      >
+                      <p class="text-emerald-600 text-sm">செயலாளர்</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >அல்-ஹாஜ் அல் ஆலிம் என்.எல்.எம். ஃபாரூக்</span
+                      >
+                      <p class="text-emerald-600 text-sm">பொருளாளர்</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >அல்-ஹாஜ் எம்.ஏ.சி. ரஷீத்</span
+                      >
+                      <p class="text-emerald-600 text-sm">தணிக்கையாளர்</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Teaching Staff -->
+              <div
+                class="bg-white p-8 rounded-xl border-l-4 border-blue-600 shadow-sm"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-chalkboard-teacher text-blue-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-900">
+                      கற்பித்தல் ஊழியர்கள்
+                    </h4>
+                    <p class="text-blue-600 font-medium">கல்வி சிறப்பு</p>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-users text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >15+ மதிப்பிற்குரிய ஷேக்குகள் மற்றும் ஆசிரியர்கள்</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >உப அதிபர்: அஷ்-ஷேக் யூ.ஆர். அப்துஸ் ஸத்தார்</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >உப அதிபர்: அஷ்-ஷேக் ஏ. அபூஷுஹைரா</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-clock text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >30+ வருடங்கள் சேவையாற்றும் பல ஆசிரியர்கள்</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Leadership Philosophy -->
+            <div class="bg-emerald-50 p-8 rounded-xl border border-emerald-200">
+              <div class="text-center mb-6">
+                <h4 class="text-2xl font-bold text-emerald-800 mb-2">
+                  தலைமைத் தத்துவம்
+                </h4>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto rounded-full"></div>
+              </div>
+              <p class="text-gray-700 text-lg leading-relaxed text-center mb-6">
+                "தனி நபர் ஆதிக்கமில்லாத, படித்த, பண்பட்ட நிர்வாகத் திறன் கொண்ட
+                நிர்வாக சபையினால், பல திட்டமிடல்களுடன், முறைப்படுத்தப்பட்ட
+                தூரநோக்குடனும் கல்லூரி நிர்வகிக்கப்படுகிறது."
+              </p>
+              <div class="grid sm:grid-cols-3 gap-6">
+                <div class="text-center">
+                  <div
+                    class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-brain text-white"></i>
+                  </div>
+                  <h5 class="font-semibold text-emerald-800 mb-2">
+                    படித்த தலைமை
+                  </h5>
+                  <p class="text-sm text-gray-600">
+                    உயர் தகுதி வாய்ந்த மற்றும் அனுபவம் வாய்ந்த நிர்வாகிகள்
+                  </p>
+                </div>
+                <div class="text-center">
+                  <div
+                    class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-eye text-white"></i>
+                  </div>
+                  <h5 class="font-semibold text-blue-800 mb-2">தூரநோக்கு</h5>
+                  <p class="text-sm text-gray-600">
+                    நிலையான வளர்ச்சிக்கான மூலோபாய திட்டமிடல்
+                  </p>
+                </div>
+                <div class="text-center">
+                  <div
+                    class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-balance-scale text-white"></i>
+                  </div>
+                  <h5 class="font-semibold text-purple-800 mb-2">
+                    கூட்டு ஞானம்
+                  </h5>
+                  <p class="text-sm text-gray-600">
+                    ஜனநாயக முடிவெடுக்கும் செயல்முறை
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section
+      class="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-emerald-700 via-emerald-600 to-green-700 text-white relative overflow-hidden"
+    >
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-0 right-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-20 h-20 bg-yellow-400 rounded-full mb-6 shadow-2xl"
+            >
+              <i class="fas fa-trophy text-white text-3xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white"
+            >
+              எமது <span class="text-yellow-300">சாதனைகள்</span>
+            </h2>
+            <div class="w-24 h-1 bg-yellow-400 mx-auto rounded-full"></div>
+            <p
+              class="text-green-100 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed mt-6"
+            >
+              கல்வி சிறப்பு, ஆன்மீக வளர்ச்சி மற்றும் குறிப்பிடத்தக்க
+              மைல்கற்களின் மூன்று தசாப்தங்கள்
+            </p>
+          </div>
+
+          <!-- Achievement Stats Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 mb-16">
+            <!-- Years of Excellence -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 text-center hover:bg-white/20 transition-all border border-white/20"
+            >
+              <div class="relative mb-6">
+                <div
+                  class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto shadow-2xl"
+                >
+                  <i class="fas fa-clock text-white text-2xl"></i>
+                </div>
+              </div>
+              <div
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 text-yellow-300"
+              >
+                30+
+              </div>
+              <div class="text-white text-base sm:text-lg font-semibold mb-2">
+                சிறப்பின் வருடங்கள்
+              </div>
+              <p class="text-green-200 text-sm leading-relaxed">
+                1990 முதல் இஸ்லாமியக் கல்விக்கான அசைக்க முடியாத அர்ப்பணிப்பு
+              </p>
+              <div
+                class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"
+              ></div>
+            </div>
+
+            <!-- Current Students -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 text-center hover:bg-white/20 transition-all border border-white/20"
+            >
+              <div class="relative mb-6">
+                <div
+                  class="w-20 h-20 bg-blue-400 rounded-full flex items-center justify-center mx-auto shadow-2xl"
+                >
+                  <i class="fas fa-users text-white text-2xl"></i>
+                </div>
+              </div>
+              <div
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 text-blue-300"
+              >
+                250
+              </div>
+              <div class="text-white text-base sm:text-lg font-semibold mb-2">
+                தற்போதைய மாணவர்கள்
+              </div>
+              <p class="text-green-200 text-sm leading-relaxed">
+                இஸ்லாமிய அறிவைத் தொடரும் அர்ப்பணிப்புள்ள கற்கும் மாணவர்கள்
+              </p>
+              <div class="w-16 h-1 bg-blue-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Qualified Teachers -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 text-center hover:bg-white/20 transition-all border border-white/20"
+            >
+              <div class="relative mb-6">
+                <div
+                  class="w-20 h-20 bg-purple-400 rounded-full flex items-center justify-center mx-auto shadow-2xl"
+                >
+                  <i class="fas fa-chalkboard-teacher text-white text-2xl"></i>
+                </div>
+              </div>
+              <div
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 text-purple-300"
+              >
+                20+
+              </div>
+              <div class="text-white text-base sm:text-lg font-semibold mb-2">
+                தகுதிவாய்ந்த ஆசிரியர்கள்
+              </div>
+              <p class="text-green-200 text-sm leading-relaxed">
+                மதிப்பிற்குரிய அறிஞர்கள் மற்றும் கல்வியாளர்கள்
+              </p>
+              <div
+                class="w-16 h-1 bg-purple-400 mx-auto mt-4 rounded-full"
+              ></div>
+            </div>
+
+            <!-- Graduate Scholars -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 text-center hover:bg-white/20 transition-all border border-white/20"
+            >
+              <div class="relative mb-6">
+                <div
+                  class="w-20 h-20 bg-teal-400 rounded-full flex items-center justify-center mx-auto shadow-2xl"
+                >
+                  <i class="fas fa-user-graduate text-white text-2xl"></i>
+                </div>
+              </div>
+              <div
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 text-teal-300"
+              >
+                100+
+              </div>
+              <div class="text-white text-base sm:text-lg font-semibold mb-2">
+                பட்டதாரி அறிஞர்கள்
+              </div>
+              <p class="text-green-200 text-sm leading-relaxed">
+                சமூகத்துக்கு சேவை செய்யும் வெற்றிகரமான முன்னாள் மாணவர்கள்
+              </p>
+              <div class="w-16 h-1 bg-teal-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+          </div>
+
+          <!-- Achievement Highlights -->
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- First in Sri Lanka Achievement -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mr-6 shadow-xl"
+                >
+                  <i class="fas fa-trophy text-white text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-white mb-2">
+                    இலங்கையில் முதன்மை
+                  </h3>
+                  <p class="text-amber-200 font-medium">முன்னோடி சிறப்பு</p>
+                </div>
+              </div>
+              <p class="text-green-100 text-lg leading-relaxed mb-4">
+                இலங்கையில் விரிவான ஹிஃப்ஸ் நிகழ்ச்சியை நவீன இஸ்லாமியக்
+                கல்வியுடன் ஒருங்கிணைத்த முதல் அரபு கல்லூரி என்ற பெருமையை அந்நூர்
+                அரபுக் கல்லூரி கொண்டுள்ளது.
+              </p>
+              <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                <div class="flex items-center text-amber-200">
+                  <i class="fas fa-star mr-3 text-xl"></i>
+                  <span class="font-bold"
+                    >கல்வி கண்டுபிடிப்புக்கான தேசிய அங்கீகாரம்</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Excellence Award Achievement -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center mr-6 shadow-xl"
+                >
+                  <i class="fas fa-award text-white text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-white mb-2">
+                    சிறப்பு விருது
+                  </h3>
+                  <p class="text-blue-200 font-medium">
+                    கல்வியில் கண்டுபிடிப்பு
+                  </p>
+                </div>
+              </div>
+              <p class="text-green-100 text-lg leading-relaxed mb-4">
+                மதக் கல்வி கண்டுபிடிப்புக்கான சிறப்பான பங்களிப்பு மற்றும்
+                இஸ்லாமிய அறிவுநிலையின் உயர்ந்த தரங்களைப் பேணுவதற்காக
+                அங்கீகரிக்கப்பட்டது.
+              </p>
+              <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                <div class="flex items-center text-blue-200">
+                  <i class="fas fa-medal mr-3 text-xl"></i>
+                  <span class="font-bold"
+                    >மதக் கல்வி கண்டுபிடிப்புக்கான விருது</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone Achievements -->
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-white/20"
+          >
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-white mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-landmark text-yellow-400 mr-3"></i>
+                மைல்கல் சாதனைகள்
+              </h3>
+              <p class="text-green-200 text-lg">
+                எமது பயணத்தை வரையறுக்கும் முக்கிய சாதனைகள்
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+              <!-- Academic Excellence Milestone -->
+              <div class="text-center group">
+                <div
+                  class="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
+                >
+                  <i class="fas fa-graduation-cap text-white text-xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-emerald-300 mb-3">
+                  கல்வி சிறப்பு
+                </h4>
+                <p class="text-green-200 text-sm leading-relaxed">
+                  மத மற்றும் மதச்சார்பற்ற பரீட்சைகளில் சிறப்பாக செயல்படும்
+                  பட்டதாரிகளை தொடர்ச்சியாக உருவாக்குதல்
+                </p>
+              </div>
+
+              <!-- Community Impact Milestone -->
+              <div class="text-center group">
+                <div
+                  class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
+                >
+                  <i class="fas fa-hands-helping text-white text-xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-blue-300 mb-3">
+                  சமூக தாக்கம்
+                </h4>
+                <p class="text-green-200 text-sm leading-relaxed">
+                  இலங்கை முழுவதும் இமாம்கள், ஆசிரியர்கள் மற்றும் சமூகத்
+                  தலைவர்களாக பணியாற்றும் முன்னாள் மாணவர்கள்
+                </p>
+              </div>
+
+              <!-- International Recognition Milestone -->
+              <div class="text-center group">
+                <div
+                  class="w-16 h-16 bg-purple-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
+                >
+                  <i class="fas fa-globe text-white text-xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-purple-300 mb-3">
+                  சர்வதேச அங்கீகாரம்
+                </h4>
+                <p class="text-green-200 text-sm leading-relaxed">
+                  உலகின் மதிப்புமிக்க இஸ்லாமிய பல்கலைக்கழகங்களுக்கு
+                  புலமைப்பரிசில் பெறும் மாணவர்கள்
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section - Complete -->
+    <section
+      id="contact"
+      class="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50"
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-6"
+            >
+              <i class="fas fa-envelope text-emerald-600 text-2xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              தொடர்பு <span class="text-emerald-600">கொள்ளுங்கள்</span>
+            </h2>
+            <div
+              class="w-24 h-1 bg-emerald-600 mx-auto rounded-full mb-6"
+            ></div>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+              எமது நிகழ்ச்சிகள் மற்றும் சேர்க்கை செயல்முறை பற்றி மேலும் அறிய
+              எங்களைத் தொடர்பு கொள்ளுங்கள்
+            </p>
+          </div>
+
+          <!-- Contact Information Cards -->
+          <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Location Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-red-600"
+            >
+              <div
+                class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-map-marker-alt text-red-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">அமைவிடம்</h3>
+              <p class="text-gray-700 leading-relaxed">
+                சியம்பலாகஸ்கொட்டுவ<br />
+                குருநாகல் மாவட்டம்<br />
+                வடமேல் மாகாணம்<br />
+                இலங்கை
+              </p>
+            </div>
+
+            <!-- Phone Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-600"
+            >
+              <div
+                class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-phone text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">தொலைபேசி</h3>
+              <p class="text-gray-700 leading-relaxed">
+                +94 37 22 47895<br />
+                சேர்க்கை விசாரணைகளுக்கு எங்களை அழையுங்கள்
+              </p>
+            </div>
+
+            <!-- Email Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-600"
+            >
+              <div
+                class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-envelope text-purple-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">மின்னஞ்சல்</h3>
+              <p class="text-gray-700 leading-relaxed">
+                info@annoor.lk<br />
+                உங்கள் விசாரணைகளை அனுப்புங்கள்
+              </p>
+            </div>
+
+            <!-- Office Hours Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-emerald-600"
+            >
+              <div
+                class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-clock text-emerald-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">அலுவலக நேரம்</h3>
+              <p class="text-gray-700 leading-relaxed">
+                திங்கள் - வெள்ளி<br />
+                காலை 8:00 - மாலை 5:00<br />
+                சனி: சந்திப்பு மூலம்
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Methods -->
+          <div class="bg-white p-8 lg:p-12 rounded-2xl shadow-lg mb-12">
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-comments text-emerald-600 mr-3"></i>
+                எங்களை அணுகும் வழிகள்
+              </h3>
+              <p class="text-gray-700 text-lg">
+                உங்கள் விருப்பமான தொடர்பு முறையைத் தேர்ந்தெடுங்கள்
+              </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div
+                class="bg-gray-50 p-6 rounded-xl text-center hover:bg-white transition-colors group"
+              >
+                <div
+                  class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-phone text-white"></i>
+                </div>
+                <h4 class="font-semibold text-emerald-800 mb-2">
+                  எங்களை அழையுங்கள்
+                </h4>
+                <p class="text-sm text-gray-600">
+                  எமது சேர்க்கை குழுவுடன் நேரடியாக பேசுங்கள்
+                </p>
+              </div>
+
+              <div
+                class="bg-gray-50 p-6 rounded-xl text-center hover:bg-white transition-colors group"
+              >
+                <div
+                  class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-envelope text-white"></i>
+                </div>
+                <h4 class="font-semibold text-blue-800 mb-2">
+                  எங்களுக்கு மின்னஞ்சல் அனுப்புங்கள்
+                </h4>
+                <p class="text-sm text-gray-600">
+                  விரிவான விசாரணைகள் மற்றும் கேள்விகளை அனுப்புங்கள்
+                </p>
+              </div>
+
+              <div
+                class="bg-gray-50 p-6 rounded-xl text-center hover:bg-white transition-colors group"
+              >
+                <div
+                  class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-map text-white"></i>
+                </div>
+                <h4 class="font-semibold text-purple-800 mb-2">
+                  எங்களைப் பார்வையிடுங்கள்
+                </h4>
+                <p class="text-sm text-gray-600">
+                  வளாக சுற்றுப்பயணம் மேற்கொண்டு எமது குழுவை சந்தியுங்கள்
+                </p>
+              </div>
+
+              <div
+                class="bg-gray-50 p-6 rounded-xl text-center hover:bg-white transition-colors group"
+              >
+                <div
+                  class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-calendar text-white"></i>
+                </div>
+                <h4 class="font-semibold text-amber-800 mb-2">
+                  சந்திப்பு பதிவு செய்யுங்கள்
+                </h4>
+                <p class="text-sm text-gray-600">
+                  ஆலோசனைக்காக சந்திப்பை முன்பதிவு செய்யுங்கள்
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Support Services -->
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Admission Information Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-user-plus text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                சேர்க்கை தகவல்
+              </h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                எமது சேர்க்கை தேவைகள், விண்ணப்ப செயல்முறை மற்றும் சேர்க்கை
+                நடைமுறைகள் பற்றி அறிக
+              </p>
+              <button
+                class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                மேலும் அறிக
+              </button>
+            </div>
+
+            <!-- Student Support Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-hands-helping text-emerald-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">மாணவர் ஆதரவு</h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                தற்போதைய மாணவர்கள் மற்றும் அவர்களது குடும்பங்களுக்கான விரிவான
+                ஆதரவு சேவைகள்
+              </p>
+              <button
+                class="bg-emerald-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
+              >
+                ஆதரவு பெறுங்கள்
+              </button>
+            </div>
+
+            <!-- Parent Portal Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-users text-purple-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                பெற்றோர் போர்ட்டல்
+              </h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                உங்கள் குழந்தையின் முன்னேற்றம் மற்றும் பள்ளி செயல்பாடுகளுடன்
+                இணைந்திருங்கள்
+              </p>
+              <button
+                class="bg-purple-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
+              >
+                போர்ட்டலில் அணுகுங்கள்
+              </button>
+            </div>
+          </div>
+
+          <!-- CTA Banner -->
+          <div
+            class="mt-12 bg-emerald-600 p-8 lg:p-12 rounded-2xl text-center text-white shadow-xl"
+          >
+            <h3 class="text-2xl lg:text-3xl font-bold mb-4">
+              எங்களுடன் இணையத் தயாரா?
+            </h3>
+            <p class="text-emerald-100 text-lg mb-8 max-w-2xl mx-auto">
+              இன்று இஸ்லாமியக் கல்வியில் உங்கள் பயணத்தைத் தொடங்குங்கள். எமது
+              நிகழ்ச்சிகள் பற்றி மேலும் அறிந்து சேர்க்கை செயல்முறையைத் தொடங்க
+              தொடர்பு கொள்ளுங்கள்.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="tel:+94372247895"
+                class="inline-flex items-center justify-center bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-all shadow-lg"
+              >
+                <i class="fas fa-phone mr-2"></i>
+                இப்போது அழையுங்கள்
+              </a>
+              <a
+                href="mailto:info@annoor.lk"
+                class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-emerald-600 transition-all"
+              >
+                <i class="fas fa-envelope mr-2"></i>
+                மின்னஞ்சல் அனுப்புங்கள்
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer - Complete -->
+    <footer class="bg-gray-900 text-white relative overflow-hidden">
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="absolute top-0 right-0 w-96 h-96 bg-emerald-400 rounded-full blur-3xl transform translate-x-32 -translate-y-32"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-96 h-96 bg-green-400 rounded-full blur-3xl transform -translate-x-32 translate-y-32"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 py-16 relative z-10">
+        <!-- Main Footer Content -->
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 lg:gap-12 mb-12">
+          <!-- College Information -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center space-x-4 mb-6">
+              <div class="relative group">
+                <img
+                  src="https://placehold.co/60x60/008751/ffffff?text=அந்"
+                  alt="அந்நூர் சின்னம்"
+                  class="relative rounded-full w-16 h-16 shadow-2xl"
+                />
+                <div
+                  class="absolute -top-1 -right-1 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="fas fa-star text-white text-xs"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl lg:text-3xl font-bold text-emerald-300">
+                  அந்நூர் அரபுக் கல்லூரி
+                </h3>
+                <p class="text-emerald-300 font-medium">
+                  இஸ்லாமியக் கல்வியில் சிறந்து விளங்குதல்
+                </p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+              1990-ஆம் ஆண்டு நிறுவப்பட்டது, மூன்று தசாப்தங்களுக்கும் மேலாக
+              இஸ்லாமிய அறிஞர்களை வளர்த்து, இலங்கையில் பாரம்பரிய இஸ்லாமியக்
+              கல்வியின் கலங்கரை விளக்கமாக சேவை செய்து வருகிறோம்.
+            </p>
+
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div
+                class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 text-center"
+              >
+                <div class="text-2xl font-bold text-emerald-300 mb-1">30+</div>
+                <div class="text-sm text-gray-300">சிறப்பின் வருடங்கள்</div>
+              </div>
+              <div
+                class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 text-center"
+              >
+                <div class="text-2xl font-bold text-emerald-300 mb-1">250+</div>
+                <div class="text-sm text-gray-300">சேர்க்கப்பட்ட மாணவர்கள்</div>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-3">
+              <div class="flex items-center space-x-3 text-gray-300">
+                <div
+                  class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-map-marker-alt text-emerald-400"></i>
+                </div>
+                <span>சியம்பலாகஸ்கொட்டுவ, குருநாகல் மாவட்டம், இலங்கை</span>
+              </div>
+              <div class="flex items-center space-x-3 text-gray-300">
+                <div
+                  class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-phone text-emerald-400"></i>
+                </div>
+                <span>+94 37 22 47895</span>
+              </div>
+              <div class="flex items-center space-x-3 text-gray-300">
+                <div
+                  class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-envelope text-emerald-400"></i>
+                </div>
+                <span>info@annoor.lk</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <div class="flex items-center mb-6">
+              <div
+                class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3"
+              >
+                <i class="fas fa-link text-white"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white">விரைவு இணைப்புகள்</h4>
+            </div>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#about"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  எம்மைப் பற்றி
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#academics"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  கல்வி நிகழ்ச்சிகள்
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#facilities"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  வசதிகள்
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#administration"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  நிர்வாகம்
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  எங்களைத் தொடர்பு கொள்ளுங்கள்
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Connect With Us -->
+          <div>
+            <div class="flex items-center mb-6">
+              <div
+                class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3"
+              >
+                <i class="fas fa-share-alt text-white"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white">
+                எங்களுடன் இணைந்திருங்கள்
+              </h4>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="flex flex-wrap gap-4 mb-6">
+              <a
+                href="#"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-facebook text-xl text-gray-300 hover:text-blue-400 transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-twitter text-xl text-gray-300 hover:text-sky-400 transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-instagram text-xl text-gray-300 hover:text-pink-400 transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-youtube text-xl text-gray-300 hover:text-red-400 transition-colors"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-700 pt-8">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+          >
+            <div class="text-center md:text-left">
+              <p class="text-gray-300">
+                &copy; 2024 அந்நூர் அரபுக் கல்லூரி. அனைத்து உரிமைகளும்
+                பாதுகாக்கப்பட்டவை.
+              </p>
+              <p class="text-emerald-300 text-sm mt-1">
+                நாளைய இஸ்லாமிய அறிஞர்களை வளர்ப்போம்
+              </p>
+            </div>
+
+            <!-- Footer Navigation -->
+            <div
+              class="flex flex-wrap justify-center md:justify-end space-x-6 text-sm"
+            >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-emerald-300 transition-colors"
+                >தனியுரிமைக் கொள்கை</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-emerald-300 transition-colors"
+                >சேவை விதிமுறைகள்</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-emerald-300 transition-colors"
+                >அணுகல் தன்மை</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-emerald-300 transition-colors"
+                >தள வரைபடம்</a
+              >
+            </div>
+          </div>
+
+          <!-- Inspirational Quote -->
+          <div
+            class="text-center mt-8 p-6 bg-emerald-900/50 rounded-2xl border border-emerald-700/30"
+          >
+            <blockquote class="text-emerald-200 italic text-lg mb-2">
+              "எவர் அல்லாஹ் மீது நம்பிக்கை வைக்கிறாரோ அவருக்கு அவன் போதுமானவன்."
+            </blockquote>
+            <cite class="text-emerald-300 text-sm">குர்ஆன் 65:3</cite>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            // Close mobile menu
+            document.getElementById("mobile-menu").classList.add("hidden");
+          }
+        });
+      });
+
+      // Header shadow on scroll
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("header");
+        if (window.scrollY > 10) {
+          header.classList.add("shadow-lg");
+        } else {
+          header.classList.remove("shadow-lg");
+        }
+      });
+    </script>
+  </body>
+</html>
