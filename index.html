@@ -1,0 +1,2980 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An-Noor Arabic College - Excellence in Islamic Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Custom Animations */
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .animate-fadeInUp {
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #059669;
+        border-radius: 5px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #047857;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans antialiased">
+    <!-- Sticky Header with improved shadow -->
+    <header
+      id="header"
+      class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300"
+    >
+      <div class="container mx-auto px-4">
+        <!-- Main header -->
+        <div class="py-3 lg:py-4">
+          <div class="flex items-center justify-between">
+            <!-- Logo section - Simplified -->
+            <a href="#" class="flex items-center space-x-3 group">
+              <div class="relative">
+                <div
+                  class="w-12 h-12 lg:w-14 lg:h-14 bg-emerald-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                >
+                  <span class="text-white font-bold text-xl lg:text-2xl"
+                    >AN</span
+                  >
+                </div>
+                <div
+                  class="absolute -top-1 -right-1 w-4 h-4 bg-amber-400 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-star text-white text-xs"></i>
+                </div>
+              </div>
+              <div>
+                <h1
+                  class="text-lg lg:text-xl font-bold text-gray-800 leading-tight"
+                >
+                  An-Noor Arabic College
+                </h1>
+                <p class="text-xs lg:text-sm text-emerald-600 font-medium">
+                  Since 1990
+                </p>
+              </div>
+            </a>
+
+            <!-- Desktop navigation - Cleaner design -->
+            <nav class="hidden lg:flex items-center space-x-1">
+              <a
+                href="#about"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+              </a>
+              <a
+                href="#academics"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-graduation-cap"></i>
+                <span>Academics</span>
+              </a>
+              <a
+                href="#facilities"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-building"></i>
+                <span>Facilities</span>
+              </a>
+              <a
+                href="#administration"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-users-cog"></i>
+                <span>Administration</span>
+              </a>
+              <a
+                href="#contact"
+                class="flex items-center space-x-2 ml-2 bg-emerald-600 text-white hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-semibold shadow-sm hover:shadow-md transition-all duration-200"
+              >
+                <i class="fas fa-envelope"></i>
+                <span>Contact Us</span>
+              </a>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <button
+              id="mobile-menu-button"
+              class="lg:hidden text-gray-700 p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              aria-label="Toggle menu"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile navigation - Improved -->
+        <nav id="mobile-menu" class="hidden lg:hidden pb-4 animate-fadeInUp">
+          <div class="bg-gray-50 rounded-xl p-4 space-y-2">
+            <a
+              href="#about"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-info-circle w-5"></i>
+              <span>About</span>
+            </a>
+            <a
+              href="#academics"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-graduation-cap w-5"></i>
+              <span>Academics</span>
+            </a>
+            <a
+              href="#facilities"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-building w-5"></i>
+              <span>Facilities</span>
+            </a>
+            <a
+              href="#administration"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-users-cog w-5"></i>
+              <span>Administration</span>
+            </a>
+            <a
+              href="#contact"
+              class="flex items-center justify-center space-x-2 py-3 px-4 bg-emerald-600 text-white hover:bg-emerald-700 rounded-lg transition-all font-medium text-center"
+            >
+              <i class="fas fa-envelope"></i>
+              <span>Contact Us</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section - Cleaner, More Modern -->
+    <section
+      class="relative bg-gradient-to-br from-emerald-50 to-teal-50 overflow-hidden"
+    >
+      <!-- Subtle background pattern -->
+      <div class="absolute inset-0 opacity-[0.03]">
+        <div
+          class="absolute inset-0"
+          style="
+            background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23059669\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+          "
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 py-16 sm:py-24 lg:py-32 relative">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Content - Better typography -->
+          <div class="text-center lg:text-left">
+            <!-- Badge -->
+            <div
+              class="inline-flex items-center bg-white px-4 py-2 rounded-full shadow-sm mb-6"
+            >
+              <i class="fas fa-star text-amber-500 mr-2"></i>
+              <span class="text-gray-700 font-medium text-sm"
+                >Established 1990 • 30+ Years</span
+              >
+            </div>
+
+            <h1
+              class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+            >
+              <span class="text-gray-900">Nurturing</span>
+              <span class="block text-emerald-600">Islamic Scholars</span>
+              <span class="text-gray-900">for Tomorrow</span>
+            </h1>
+
+            <p class="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
+              A beacon of Islamic education in Sri Lanka, producing generations
+              of scholars dedicated to preserving and promoting Islamic
+              knowledge.
+            </p>
+
+            <!-- Stats - Simplified -->
+            <div
+              class="flex flex-wrap justify-center lg:justify-start gap-8 mb-8"
+            >
+              <div>
+                <div class="text-3xl font-bold text-emerald-600">30+</div>
+                <div class="text-sm text-gray-600">Years</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-emerald-600">250+</div>
+                <div class="text-sm text-gray-600">Students</div>
+              </div>
+              <div>
+                <div class="text-3xl font-bold text-emerald-600">100+</div>
+                <div class="text-sm text-gray-600">Graduates</div>
+              </div>
+            </div>
+
+            <!-- CTA Buttons - Better hierarchy -->
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="#about"
+                class="inline-flex items-center justify-center bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-emerald-700 transition-all shadow-lg hover:shadow-xl"
+              >
+                <span>Explore Our Programs</span>
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+              <a
+                href="#contact"
+                class="inline-flex items-center justify-center border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-all"
+              >
+                <i class="fas fa-phone mr-2"></i>
+                <span>Contact Us</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image - Cleaner design -->
+          <div class="relative">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+              <img
+                src="https://placehold.co/600x500/059669/ffffff?text=Islamic+Education"
+                alt="Islamic Education"
+                class="w-full h-auto"
+              />
+              <!-- Overlay badge -->
+              <div
+                class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-2xl font-bold text-emerald-600">250+</div>
+                    <div class="text-sm text-gray-600">Active Students</div>
+                  </div>
+                  <div
+                    class="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center"
+                  >
+                    <i
+                      class="fas fa-graduation-cap text-emerald-600 text-xl"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating element -->
+            <div
+              class="absolute -top-6 -right-6 bg-amber-400 p-4 rounded-2xl shadow-xl animate-float hidden lg:block"
+            >
+              <i class="fas fa-award text-white text-2xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section - Better readability -->
+    <section id="about" class="py-16 sm:py-24 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <!-- Section Header - Cleaner -->
+          <div class="text-center mb-16">
+            <span
+              class="inline-block px-4 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold mb-4"
+            >
+              Our Story
+            </span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              Our History & Mission
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Three decades of unwavering commitment to Islamic education and
+              spiritual growth
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <!-- Image -->
+            <div class="relative">
+              <div class="rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src="https://placehold.co/500x400/059669/ffffff?text=College+Building"
+                  alt="College Building"
+                  class="w-full h-auto"
+                />
+              </div>
+              <!-- Badge -->
+              <div
+                class="absolute top-4 left-4 bg-white px-4 py-2 rounded-full shadow-lg"
+              >
+                <span class="font-bold text-emerald-600">Est. 1990</span>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-6">
+              <!-- Mission -->
+              <div
+                class="bg-emerald-50 p-6 rounded-xl border-l-4 border-emerald-600"
+              >
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-3 flex items-center"
+                >
+                  <i class="fas fa-bullseye text-emerald-600 mr-3"></i>
+                  Our Sacred Mission
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                  Islam is a vibrant and divinely blessed religion capable of
+                  addressing societal needs through time. We established our
+                  institution to ensure Islam thrives as a living religion in
+                  Sri Lanka.
+                </p>
+              </div>
+
+              <!-- History -->
+              <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-600">
+                <h3
+                  class="text-xl font-bold text-gray-900 mb-3 flex items-center"
+                >
+                  <i class="fas fa-history text-blue-600 mr-3"></i>
+                  Our Humble Beginning
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                  Founded in the early 1990s at Siyambalagasakotuwa Jummah
+                  Masjid, we've grown into a respected institution serving
+                  hundreds of students.
+                </p>
+              </div>
+
+              <!-- Key stat -->
+              <div
+                class="flex items-center space-x-4 p-4 bg-gray-50 rounded-xl"
+              >
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center"
+                  >
+                    <i class="fas fa-users text-white"></i>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-gray-900">100+</div>
+                  <div class="text-sm text-gray-600">
+                    Successful Graduates Serving the Community
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline - Complete Milestones -->
+          <div class="bg-gray-50 p-8 lg:p-12 rounded-2xl">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">
+              Key Milestones Timeline
+            </h3>
+            <p class="text-gray-600 text-center mb-10">
+              A journey of growth, dedication, and achievement
+            </p>
+
+            <div class="space-y-6">
+              <!-- 1990 - Founded -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-emerald-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1990
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-emerald-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-seedling text-emerald-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">Founded</h4>
+                  </div>
+                  <p class="text-gray-600">
+                    Started with 15 students and 1 teacher at
+                    Siyambalagasakotuwa Jummah Masjid
+                  </p>
+                  <div class="mt-2 text-sm text-emerald-600 font-medium">
+                    The Beginning of a Legacy
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1991 - First Land Donation -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1991
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-blue-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-handshake text-blue-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">First Land Donation</h4>
+                  </div>
+                  <p class="text-gray-600">
+                    (40 perches) from Al-Haj Ahamed Lebbe Mathisam
+                  </p>
+                  <div class="mt-2 text-sm text-blue-600 font-medium">
+                    Community Support
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1993 - International Recognition -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-purple-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1993
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-purple-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-graduation-cap text-purple-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">
+                      International Recognition
+                    </h4>
+                  </div>
+                  <p class="text-gray-600">
+                    First student scholarship to Al-Azhar University, Egypt
+                  </p>
+                  <div class="mt-2 text-sm text-purple-600 font-medium">
+                    Global Excellence
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1995 - Foundation Stone -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-amber-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1995
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-amber-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-tools text-amber-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">Foundation Stone</h4>
+                  </div>
+                  <p class="text-gray-600">
+                    Laid for first building by Ash-Sheikh Rizvi (Mufti)
+                  </p>
+                  <div class="mt-2 text-sm text-amber-600 font-medium">
+                    Building the Future
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1996 - First Graduation -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-teal-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1996
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-teal-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-trophy text-teal-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">First Graduation</h4>
+                  </div>
+                  <p class="text-gray-600">
+                    4 students received 'An-Noori' degrees
+                  </p>
+                  <div class="mt-2 text-sm text-teal-600 font-medium">
+                    First Success
+                  </div>
+                </div>
+              </div>
+
+              <!-- 1999 - Major Expansion -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-rose-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    1999
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-rose-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-expand-arrows-alt text-rose-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">Major Expansion</h4>
+                  </div>
+                  <p class="text-gray-600">
+                    Saudi philanthropist Abdullah bin Mansour Zamil expands land
+                    to 200 perches
+                  </p>
+                  <div class="mt-2 text-sm text-rose-600 font-medium">
+                    Generous Support
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2000 - Modern Campus -->
+              <div class="flex gap-6 group">
+                <div class="flex-shrink-0">
+                  <div
+                    class="w-16 h-16 bg-cyan-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-lg group-hover:scale-110 transition-transform"
+                  >
+                    2000
+                  </div>
+                </div>
+                <div
+                  class="flex-1 bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-cyan-600"
+                >
+                  <div class="flex items-center mb-2">
+                    <i class="fas fa-university text-cyan-600 mr-2"></i>
+                    <h4 class="font-bold text-gray-900">Modern Campus</h4>
+                  </div>
+                  <p class="text-gray-600">
+                    Relocated to permanent campus with modern facilities
+                  </p>
+                  <div class="mt-2 text-sm text-cyan-600 font-medium">
+                    New Era Begins
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="py-12 sm:py-16 lg:py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-2xl mb-6"
+            >
+              <i class="fas fa-map-marked-alt text-blue-600 text-2xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              Our <span class="text-blue-600">Location</span>
+            </h2>
+            <div class="w-24 h-1 bg-blue-600 mx-auto rounded-full mb-6"></div>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+              Strategically located in the heart of Sri Lanka's educational
+              landscape
+            </p>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
+            <!-- Map Section -->
+            <div class="relative">
+              <div
+                class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl shadow-xl p-8"
+              >
+                <img
+                  src="https://placehold.co/500x350/4a5568/ffffff?text=Sri+Lanka+Map"
+                  alt="Location Map"
+                  class="w-full h-64 object-cover rounded-xl shadow-lg"
+                />
+
+                <!-- Location Pin -->
+                <div
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                >
+                  <div
+                    class="w-8 h-8 bg-red-500 rounded-full shadow-lg border-4 border-white"
+                  ></div>
+                </div>
+
+                <!-- Floating Badge -->
+                <div
+                  class="absolute top-8 left-8 bg-emerald-600 text-white px-4 py-2 rounded-full shadow-lg"
+                >
+                  <div class="flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    <span class="font-bold text-sm">Prime Location</span>
+                  </div>
+                </div>
+
+                <!-- Distance -->
+                <div
+                  class="absolute bottom-8 right-8 bg-white px-4 py-3 rounded-lg shadow-lg"
+                >
+                  <div class="flex items-center text-gray-700">
+                    <i class="fas fa-route text-blue-600 mr-2"></i>
+                    <div class="text-sm">
+                      <div class="font-bold">90 km</div>
+                      <div class="text-xs text-gray-500">from Colombo</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="space-y-8">
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-blue-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-mosque text-blue-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold text-gray-900">
+                      Siyambalagasakotuwa
+                    </h3>
+                    <p class="text-blue-600 font-medium">
+                      Our Serene Campus Location
+                    </p>
+                  </div>
+                </div>
+
+                <div class="space-y-4 text-gray-700 leading-relaxed">
+                  <p class="text-lg">
+                    The college is located approximately
+                    <span class="font-bold text-blue-600">90 km</span> from the
+                    nation's capital, Colombo, in the
+                    <span class="font-semibold">North Western Province</span>.
+                  </p>
+                  <p class="text-lg">
+                    It is situated in the
+                    <span class="font-semibold">Kurunegala District</span>,
+                    within the
+                    <span class="font-semibold"
+                      >Kuliyapitiya electoral division</span
+                    >.
+                  </p>
+                </div>
+
+                <div
+                  class="mt-6 p-4 bg-blue-50 rounded-xl border border-blue-200"
+                >
+                  <div class="flex items-center text-blue-800">
+                    <i class="fas fa-map-marker-alt mr-3 text-xl"></i>
+                    <div>
+                      <div class="font-bold text-lg">Siyambalagasakotuwa</div>
+                      <div class="text-sm text-blue-600">
+                        Kurunegala District, Sri Lanka
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-purple-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-star text-purple-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="text-2xl font-bold text-gray-900">
+                      Strategic Advantages
+                    </h3>
+                    <p class="text-purple-600 font-medium">
+                      Why Our Location Matters
+                    </p>
+                  </div>
+                </div>
+
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl hover:bg-white transition-colors"
+                  >
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center mr-3"
+                      >
+                        <i class="fas fa-check text-emerald-600 text-sm"></i>
+                      </div>
+                      <span class="font-semibold text-gray-900"
+                        >Peaceful Environment</span
+                      >
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      Tranquil surroundings perfect for focused learning and
+                      spiritual growth
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl hover:bg-white transition-colors"
+                  >
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3"
+                      >
+                        <i class="fas fa-check text-blue-600 text-sm"></i>
+                      </div>
+                      <span class="font-semibold text-gray-900"
+                        >Muslim-Majority Village</span
+                      >
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      Supportive community environment fostering Islamic values
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl hover:bg-white transition-colors"
+                  >
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-3"
+                      >
+                        <i class="fas fa-check text-orange-600 text-sm"></i>
+                      </div>
+                      <span class="font-semibold text-gray-900"
+                        >Excellent Connectivity</span
+                      >
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      Easy access via major roads and public transportation
+                    </p>
+                  </div>
+
+                  <div
+                    class="bg-gray-50 p-4 rounded-xl hover:bg-white transition-colors"
+                  >
+                    <div class="flex items-center mb-2">
+                      <div
+                        class="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center mr-3"
+                      >
+                        <i class="fas fa-check text-teal-600 text-sm"></i>
+                      </div>
+                      <span class="font-semibold text-gray-900"
+                        >Near Major Schools</span
+                      >
+                    </div>
+                    <p class="text-sm text-gray-600">
+                      Adjacent to Madeena National School and Jalalullah Jummah
+                      Masjid
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Additional Features -->
+          <div class="grid md:grid-cols-3 gap-8">
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-bus text-emerald-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Easy Access</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Located on the Narammala-Wariyapola main road with excellent
+                public transportation links
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-users text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Strong Community
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Situated in a vibrant Muslim-majority village with rich cultural
+                heritage and support
+              </p>
+            </div>
+
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-leaf text-purple-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Serene Environment
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Peaceful surroundings away from city distractions, ideal for
+                focused Islamic education
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Programs Section -->
+    <section id="academics" class="py-12 sm:py-16 lg:py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-6"
+            >
+              <i class="fas fa-graduation-cap text-emerald-600 text-2xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              Academic <span class="text-emerald-600">Excellence</span>
+            </h2>
+            <div
+              class="w-24 h-1 bg-emerald-600 mx-auto rounded-full mb-6"
+            ></div>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+              Comprehensive Islamic education with modern pedagogical approaches
+            </p>
+          </div>
+
+          <!-- Program Highlights -->
+          <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <!-- Qur'an -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-quran text-3xl text-emerald-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Qur'an Memorization
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Complete Hifz program with 30 Juz' memorization over 3 years
+              </p>
+              <div class="flex items-center text-emerald-600 font-semibold">
+                <i class="fas fa-clock mr-2"></i>
+                3-Year Program
+              </div>
+            </div>
+
+            <!-- Shari'ah -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-balance-scale text-3xl text-blue-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Shari'ah Studies
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Comprehensive Islamic jurisprudence and theology education
+              </p>
+              <div class="flex items-center text-blue-600 font-semibold">
+                <i class="fas fa-book mr-2"></i>
+                Advanced Curriculum
+              </div>
+            </div>
+
+            <!-- Arabic -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-100"
+            >
+              <div
+                class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-language text-3xl text-purple-600"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                Arabic Language
+              </h3>
+              <p class="text-gray-700 mb-4">
+                Advanced Arabic grammar, morphology, and literature
+              </p>
+              <div class="flex items-center text-purple-600 font-semibold">
+                <i class="fas fa-pen-fancy mr-2"></i>
+                Complete Fluency
+              </div>
+            </div>
+          </div>
+
+          <!-- Program Details -->
+          <div class="bg-gray-50 p-8 lg:p-12 rounded-2xl mb-16">
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-calendar-alt text-emerald-600 mr-3"></i>
+                9-Year Comprehensive Program
+              </h3>
+              <p class="text-gray-700 text-lg">
+                A complete educational journey from memorization to scholarship
+              </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+              <!-- Hifz Program -->
+              <div
+                class="bg-white p-8 rounded-xl border-l-4 border-emerald-600 shadow-sm"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-quran text-emerald-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl font-bold text-gray-900">
+                      First 3 Years
+                    </h4>
+                    <p class="text-emerald-600 font-medium">
+                      Hifz Program (Memorization)
+                    </p>
+                  </div>
+                </div>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Qur'an recitation and memorization</span
+                      >
+                      <p class="text-gray-600 text-sm">(6-12 Juz' per year)</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Complete school curriculum</span
+                      >
+                      <p class="text-gray-600 text-sm">(Grades 6-8)</p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Al-Hafiz certification</span
+                      >
+                      <p class="text-gray-600 text-sm">upon completion</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Advanced Studies -->
+              <div
+                class="bg-white p-8 rounded-xl border-l-4 border-blue-600 shadow-sm"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-university text-blue-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl font-bold text-gray-900">
+                      Advanced Years (4-9)
+                    </h4>
+                    <p class="text-blue-600 font-medium">Shari'ah Studies</p>
+                  </div>
+                </div>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >Advanced Shari'ah curriculum</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >G.C.E. O/L and A/L examinations</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >Ahadiyya Examination Certificate</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >Dharmacharya Examination Certificate</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >Al-Alim Muthawassitha Certificate</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >Al-Alim Thanawiyya Certificate</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >Shari'ah Higher Certificate (Moulavi, Al-Alim)</span
+                    >
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <span class="font-semibold text-gray-900"
+                      >Computer training and technical skills</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Qualifications Portfolio -->
+          <div class="bg-gray-50 p-8 lg:p-12 rounded-2xl">
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-award text-amber-600 mr-3"></i>
+                Complete Qualification Portfolio
+              </h3>
+              <p class="text-gray-700 text-lg mb-6">
+                Students graduate with an impressive array of qualifications
+              </p>
+              <div
+                class="inline-flex items-center bg-amber-100 px-6 py-3 rounded-full border border-amber-200"
+              >
+                <i class="fas fa-trophy text-amber-600 mr-2"></i>
+                <span class="font-bold text-amber-800"
+                  >9 Comprehensive Certifications</span
+                >
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-emerald-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-quran text-emerald-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >Qur'an Memorization</span
+                    >
+                    <p class="text-emerald-600 text-xs">(Hafiz) Certificate</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-blue-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-graduation-cap text-blue-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >G.C.E. Ordinary Level</span
+                    >
+                    <p class="text-blue-600 text-xs">(O/L) Certificate</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-green-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-certificate text-green-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >Ahadiyya Examination</span
+                    >
+                    <p class="text-green-600 text-xs">Certificate</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-purple-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-mosque text-purple-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >Dharmacharya</span
+                    >
+                    <p class="text-purple-600 text-xs">
+                      Examination Certificate
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-emerald-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-book text-emerald-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >Al-Alim Muthawassitha</span
+                    >
+                    <p class="text-emerald-600 text-xs">Certificate</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-teal-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-book-open text-teal-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >Al-Alim Thanawiyya</span
+                    >
+                    <p class="text-teal-600 text-xs">Certificate</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-amber-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-user-graduate text-amber-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >Shari'ah Higher</span
+                    >
+                    <p class="text-amber-600 text-xs">(Moulavi, Al-Alim)</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-indigo-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-trophy text-indigo-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >G.C.E. Advanced Level</span
+                    >
+                    <p class="text-indigo-600 text-xs">(A/L) Certificate</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white p-6 rounded-xl border-l-4 border-cyan-600 shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center mb-2">
+                  <div
+                    class="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center mr-3"
+                  >
+                    <i class="fas fa-laptop text-cyan-600 text-sm"></i>
+                  </div>
+                  <div>
+                    <span class="font-bold text-gray-900 text-sm"
+                      >Computer</span
+                    >
+                    <p class="text-cyan-600 text-xs">Certificate</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section - Modern cards -->
+    <section id="facilities" class="py-12 sm:py-16 lg:py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-orange-100 rounded-2xl mb-6"
+            >
+              <i class="fas fa-building text-orange-600 text-2xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              World-Class <span class="text-orange-600">Facilities</span>
+            </h2>
+            <div class="w-24 h-1 bg-orange-600 mx-auto rounded-full mb-6"></div>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+              Modern infrastructure designed for holistic education and
+              comfortable living
+            </p>
+          </div>
+
+          <!-- Main Facilities Grid -->
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- Classroom -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-orange-600"
+            >
+              <div
+                class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i
+                  class="fas fa-chalkboard-teacher text-3xl text-orange-600"
+                ></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Modern Classrooms
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Well-equipped, air-conditioned classrooms with modern teaching
+                aids and comfortable learning environment
+              </p>
+            </div>
+
+            <!-- Mosque -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-emerald-600"
+            >
+              <div
+                class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-mosque text-3xl text-emerald-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Prayer Facilities
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Beautiful two-story mosque for daily prayers, spiritual
+                development, and congregational worship
+              </p>
+            </div>
+
+            <!-- Dormitory -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-blue-600"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-bed text-3xl text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Comfortable Dormitories
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Safe, secure three-story boarding facilities with all necessary
+                amenities for student comfort
+              </p>
+            </div>
+
+            <!-- Library -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-purple-600"
+            >
+              <div
+                class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-book-reader text-3xl text-purple-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Islamic Library
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                Extensive collection of Islamic and academic literature in
+                multiple languages for research and study
+              </p>
+            </div>
+
+            <!-- Dining -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-teal-600"
+            >
+              <div
+                class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-utensils text-3xl text-teal-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Dining Hall</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Spacious two-story dining area serving nutritious, wholesome
+                meals prepared under hygienic conditions
+              </p>
+            </div>
+
+            <!-- Computer Lab -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-indigo-600"
+            >
+              <div
+                class="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mb-6"
+              >
+                <i class="fas fa-laptop text-3xl text-indigo-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Computer Lab</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Modern technology center equipped with latest computers for
+                digital literacy and technical skills training
+              </p>
+            </div>
+          </div>
+
+          <!-- Campus Infrastructure -->
+          <div class="bg-white p-8 lg:p-12 rounded-2xl shadow-lg">
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-building text-orange-600 mr-3"></i>
+                Campus Infrastructure
+              </h3>
+              <p class="text-gray-700 text-lg">
+                Comprehensive facilities built on 200 perches of land
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <!-- Buildings & Facilities -->
+              <div
+                class="bg-gray-50 p-8 rounded-xl border-l-4 border-orange-600"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-city text-orange-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl font-bold text-gray-900">
+                      Buildings & Facilities
+                    </h4>
+                    <p class="text-orange-600 font-medium">
+                      State-of-the-art infrastructure
+                    </p>
+                  </div>
+                </div>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Total Land Area:</span
+                      >
+                      <p class="text-gray-700">
+                        200 perches of carefully developed campus
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Two-Story Classroom Building:</span
+                      >
+                      <p class="text-gray-700">
+                        26 feet × 125 feet with modern facilities
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Two-Story Mosque:</span
+                      >
+                      <p class="text-gray-700">
+                        30 feet × 40 feet for congregational prayers
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Three-Story Dormitory:</span
+                      >
+                      <p class="text-gray-700">
+                        30 feet × 125 feet with full boarding facilities
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Two-Story Dining Hall:</span
+                      >
+                      <p class="text-gray-700">
+                        30 feet × 40 feet spacious dining area
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Additional Facilities -->
+              <div class="bg-gray-50 p-8 rounded-xl border-l-4 border-blue-600">
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-home text-blue-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-2xl font-bold text-gray-900">
+                      Additional Facilities
+                    </h4>
+                    <p class="text-blue-600 font-medium">
+                      Supporting infrastructure
+                    </p>
+                  </div>
+                </div>
+                <ul class="space-y-4">
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Multipurpose Building:</span
+                      >
+                      <p class="text-gray-700">
+                        30 feet × 134 feet for various activities
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Hifz Section:</span
+                      >
+                      <p class="text-gray-700">
+                        25 feet × 110 feet dedicated Qur'an memorization area
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Teacher Housing:</span
+                      >
+                      <p class="text-gray-700">
+                        Comfortable quarters for teaching staff on campus
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Alumni Office:</span
+                      >
+                      <p class="text-gray-700">
+                        Dedicated space for graduate relations and support
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0 mt-0.5"
+                    >
+                      <i class="fas fa-check text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Modern Reception:</span
+                      >
+                      <p class="text-gray-700">
+                        Professional visitor and administration area
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Administration Section - Complete -->
+    <section id="administration" class="py-12 sm:py-16 lg:py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-6"
+            >
+              <i class="fas fa-user-tie text-emerald-600 text-2xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              Leadership & <span class="text-emerald-600">Administration</span>
+            </h2>
+            <div
+              class="w-24 h-1 bg-emerald-600 mx-auto rounded-full mb-6"
+            ></div>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+              Experienced leadership guiding our institution with wisdom and
+              dedication
+            </p>
+          </div>
+
+          <!-- Principal Card -->
+          <div class="bg-gray-50 p-8 lg:p-12 rounded-2xl shadow-lg mb-16">
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div
+                  class="w-48 h-48 mx-auto bg-emerald-100 rounded-2xl flex items-center justify-center"
+                >
+                  <i class="fas fa-user-tie text-6xl text-emerald-600"></i>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold mb-4"
+                >
+                  Principal
+                </div>
+                <h3 class="text-3xl font-bold text-gray-900 mb-2">
+                  Ash-Sheikh S.D. Munawwar
+                </h3>
+                <p class="text-gray-700 mb-6 text-lg">
+                  Leading our institution since 1990 with dedication and vision
+                </p>
+                <div class="space-y-3">
+                  <div class="flex items-center text-gray-700">
+                    <i class="fas fa-award text-emerald-600 mr-3 text-lg"></i>
+                    <span>Deeni, Binnuri Qualifications</span>
+                  </div>
+                  <div class="flex items-center text-gray-700">
+                    <i class="fas fa-clock text-emerald-600 mr-3 text-lg"></i>
+                    <span>30+ Years of Service</span>
+                  </div>
+                  <div class="flex items-center text-gray-700">
+                    <i
+                      class="fas fa-university text-emerald-600 mr-3 text-lg"
+                    ></i>
+                    <span>Graduate of Deeniya & Jamia Binnuria</span>
+                  </div>
+                </div>
+                <div
+                  class="mt-6 p-4 bg-emerald-50 rounded-xl border border-emerald-200"
+                >
+                  <div class="flex items-center text-emerald-800">
+                    <i class="fas fa-star mr-3 text-xl"></i>
+                    <div>
+                      <div class="font-bold text-lg">Visionary Leadership</div>
+                      <div class="text-sm text-emerald-600">
+                        Guiding the institution since inception
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chairman and Student Strength -->
+          <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Chairman Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-600"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-chair text-blue-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900">Chairman</h3>
+                  <p class="text-blue-600 font-medium">
+                    Administrative Leadership
+                  </p>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 p-6 rounded-xl mb-4">
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  A.H.M. Haniffa
+                </h4>
+                <p class="text-gray-700 leading-relaxed">
+                  Former Deputy Principal of Madeena National School, bringing
+                  extensive educational administration experience to our
+                  institution.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-50 p-3 rounded-lg text-center">
+                  <i
+                    class="fas fa-chalkboard-teacher text-blue-600 mb-2 text-lg"
+                  ></i>
+                  <div class="text-sm font-semibold text-blue-800">
+                    Educational Expert
+                  </div>
+                </div>
+                <div class="bg-indigo-50 p-3 rounded-lg text-center">
+                  <i class="fas fa-users text-indigo-600 mb-2 text-lg"></i>
+                  <div class="text-sm font-semibold text-indigo-800">
+                    Community Leader
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Student Strength Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-emerald-600"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-14 h-14 bg-emerald-100 rounded-xl flex items-center justify-center mr-4"
+                >
+                  <i class="fas fa-user-graduate text-emerald-600 text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-gray-900">
+                    Student Community
+                  </h3>
+                  <p class="text-emerald-600 font-medium">Current Enrollment</p>
+                </div>
+              </div>
+
+              <div class="text-center mb-6">
+                <div
+                  class="inline-flex items-center justify-center w-24 h-24 bg-emerald-600 rounded-full mb-4 shadow-lg"
+                >
+                  <span class="text-3xl font-bold text-white">250</span>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">
+                  Dedicated Students
+                </h4>
+                <p class="text-gray-700 leading-relaxed">
+                  Pursuing Islamic education with commitment and excellence
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-emerald-50 p-3 rounded-lg text-center">
+                  <i class="fas fa-mosque text-emerald-600 mb-2 text-lg"></i>
+                  <div class="text-sm font-semibold text-emerald-800">
+                    Islamic Values
+                  </div>
+                </div>
+                <div class="bg-green-50 p-3 rounded-lg text-center">
+                  <i class="fas fa-book text-green-600 mb-2 text-lg"></i>
+                  <div class="text-sm font-semibold text-green-800">
+                    Academic Excellence
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Administrative Board -->
+          <div class="bg-gray-50 p-8 lg:p-12 rounded-2xl shadow-lg">
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-users text-emerald-600 mr-3"></i>
+                Administrative Board
+              </h3>
+              <p class="text-gray-700 text-lg mb-6">
+                The college is managed by an educated, cultured, and skilled
+                administrative board
+              </p>
+              <div
+                class="inline-flex items-center bg-emerald-100 px-6 py-3 rounded-full border border-emerald-200"
+              >
+                <i class="fas fa-handshake text-emerald-600 mr-2"></i>
+                <span class="font-bold text-emerald-800"
+                  >Collective Leadership</span
+                >
+              </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 mb-12">
+              <!-- Key Members -->
+              <div
+                class="bg-white p-8 rounded-xl border-l-4 border-emerald-600 shadow-sm"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-key text-emerald-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-900">Key Members</h4>
+                    <p class="text-emerald-600 font-medium">Board Leadership</p>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Al-Haj A.D. Abdur Ravoof</span
+                      >
+                      <p class="text-emerald-600 text-sm">Vice Chairman</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Al-Haj A.S.M. Fais</span
+                      >
+                      <p class="text-emerald-600 text-sm">Secretary</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Al-Haj Al-Alim N.L.M. Farook</span
+                      >
+                      <p class="text-emerald-600 text-sm">Treasurer</p>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-emerald-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Al-Haj M.A.C. Rasheed</span
+                      >
+                      <p class="text-emerald-600 text-sm">Auditor</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Teaching Staff -->
+              <div
+                class="bg-white p-8 rounded-xl border-l-4 border-blue-600 shadow-sm"
+              >
+                <div class="flex items-center mb-6">
+                  <div
+                    class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-chalkboard-teacher text-blue-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="text-xl font-bold text-gray-900">
+                      Teaching Staff
+                    </h4>
+                    <p class="text-blue-600 font-medium">Academic Excellence</p>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-users text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >15+ Esteemed Sheikhs & Teachers</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Vice Principal: Ash-Sheikh U.R. Abdus Sattar</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-user text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Vice Principal: Ash-Sheikh A. Abu Shuhaira</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center p-3 bg-gray-50 rounded-lg hover:bg-white transition-colors"
+                  >
+                    <div
+                      class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0"
+                    >
+                      <i class="fas fa-clock text-white text-sm"></i>
+                    </div>
+                    <div>
+                      <span class="font-semibold text-gray-900"
+                        >Many teachers serving 30+ years</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Leadership Philosophy -->
+            <div class="bg-emerald-50 p-8 rounded-xl border border-emerald-200">
+              <div class="text-center mb-6">
+                <h4 class="text-2xl font-bold text-emerald-800 mb-2">
+                  Leadership Philosophy
+                </h4>
+                <div class="w-16 h-1 bg-emerald-500 mx-auto rounded-full"></div>
+              </div>
+              <p class="text-gray-700 text-lg leading-relaxed text-center mb-6">
+                "The college is managed by an educated, cultured, and skilled
+                administrative board free from individual dominance, operating
+                with well-structured plans and a long-term vision."
+              </p>
+              <div class="grid sm:grid-cols-3 gap-6">
+                <div class="text-center">
+                  <div
+                    class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-brain text-white"></i>
+                  </div>
+                  <h5 class="font-semibold text-emerald-800 mb-2">
+                    Educated Leadership
+                  </h5>
+                  <p class="text-sm text-gray-600">
+                    Highly qualified and experienced administrators
+                  </p>
+                </div>
+                <div class="text-center">
+                  <div
+                    class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-eye text-white"></i>
+                  </div>
+                  <h5 class="font-semibold text-blue-800 mb-2">
+                    Long-term Vision
+                  </h5>
+                  <p class="text-sm text-gray-600">
+                    Strategic planning for sustainable growth
+                  </p>
+                </div>
+                <div class="text-center">
+                  <div
+                    class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-balance-scale text-white"></i>
+                  </div>
+                  <h5 class="font-semibold text-purple-800 mb-2">
+                    Collective Wisdom
+                  </h5>
+                  <p class="text-sm text-gray-600">
+                    Democratic decision-making process
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section
+      class="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-emerald-700 via-emerald-600 to-green-700 text-white relative overflow-hidden"
+    >
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-0 right-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-20 h-20 bg-yellow-400 rounded-full mb-6 shadow-2xl"
+            >
+              <i class="fas fa-trophy text-white text-3xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-white"
+            >
+              Our <span class="text-yellow-300">Achievements</span>
+            </h2>
+            <div class="w-24 h-1 bg-yellow-400 mx-auto rounded-full"></div>
+            <p
+              class="text-green-100 text-lg sm:text-xl max-w-3xl mx-auto leading-relaxed mt-6"
+            >
+              Three decades of educational excellence, spiritual growth, and
+              remarkable milestones
+            </p>
+          </div>
+
+          <!-- Achievement Stats Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8 mb-16">
+            <!-- Years of Excellence -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 text-center hover:bg-white/20 transition-all border border-white/20"
+            >
+              <div class="relative mb-6">
+                <div
+                  class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto shadow-2xl"
+                >
+                  <i class="fas fa-clock text-white text-2xl"></i>
+                </div>
+              </div>
+              <div
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 text-yellow-300"
+              >
+                30+
+              </div>
+              <div class="text-white text-base sm:text-lg font-semibold mb-2">
+                Years of Excellence
+              </div>
+              <p class="text-green-200 text-sm leading-relaxed">
+                Unwavering commitment to Islamic education since 1990
+              </p>
+              <div
+                class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"
+              ></div>
+            </div>
+
+            <!-- Current Students -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 text-center hover:bg-white/20 transition-all border border-white/20"
+            >
+              <div class="relative mb-6">
+                <div
+                  class="w-20 h-20 bg-blue-400 rounded-full flex items-center justify-center mx-auto shadow-2xl"
+                >
+                  <i class="fas fa-users text-white text-2xl"></i>
+                </div>
+              </div>
+              <div
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 text-blue-300"
+              >
+                250
+              </div>
+              <div class="text-white text-base sm:text-lg font-semibold mb-2">
+                Current Students
+              </div>
+              <p class="text-green-200 text-sm leading-relaxed">
+                Dedicated learners pursuing Islamic knowledge
+              </p>
+              <div class="w-16 h-1 bg-blue-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Qualified Teachers -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 text-center hover:bg-white/20 transition-all border border-white/20"
+            >
+              <div class="relative mb-6">
+                <div
+                  class="w-20 h-20 bg-purple-400 rounded-full flex items-center justify-center mx-auto shadow-2xl"
+                >
+                  <i class="fas fa-chalkboard-teacher text-white text-2xl"></i>
+                </div>
+              </div>
+              <div
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 text-purple-300"
+              >
+                20+
+              </div>
+              <div class="text-white text-base sm:text-lg font-semibold mb-2">
+                Qualified Teachers
+              </div>
+              <p class="text-green-200 text-sm leading-relaxed">
+                Esteemed scholars and educators
+              </p>
+              <div
+                class="w-16 h-1 bg-purple-400 mx-auto mt-4 rounded-full"
+              ></div>
+            </div>
+
+            <!-- Graduate Scholars -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-8 text-center hover:bg-white/20 transition-all border border-white/20"
+            >
+              <div class="relative mb-6">
+                <div
+                  class="w-20 h-20 bg-teal-400 rounded-full flex items-center justify-center mx-auto shadow-2xl"
+                >
+                  <i class="fas fa-user-graduate text-white text-2xl"></i>
+                </div>
+              </div>
+              <div
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-3 text-teal-300"
+              >
+                100+
+              </div>
+              <div class="text-white text-base sm:text-lg font-semibold mb-2">
+                Graduate Scholars
+              </div>
+              <p class="text-green-200 text-sm leading-relaxed">
+                Successful alumni serving the community
+              </p>
+              <div class="w-16 h-1 bg-teal-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+          </div>
+
+          <!-- Achievement Highlights -->
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <!-- First in Sri Lanka Achievement -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-16 h-16 bg-amber-400 rounded-full flex items-center justify-center mr-6 shadow-xl"
+                >
+                  <i class="fas fa-trophy text-white text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-white mb-2">
+                    First in Sri Lanka
+                  </h3>
+                  <p class="text-amber-200 font-medium">
+                    Pioneering Excellence
+                  </p>
+                </div>
+              </div>
+              <p class="text-green-100 text-lg leading-relaxed mb-4">
+                An-Noor Arabic College holds the distinction of being the first
+                Arabic college in Sri Lanka to integrate a comprehensive Hifz
+                program with modern Islamic education.
+              </p>
+              <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                <div class="flex items-center text-amber-200">
+                  <i class="fas fa-star mr-3 text-xl"></i>
+                  <span class="font-bold"
+                    >National Recognition for Educational Innovation</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Excellence Award Achievement -->
+            <div
+              class="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center mr-6 shadow-xl"
+                >
+                  <i class="fas fa-award text-white text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-white mb-2">
+                    Excellence Award
+                  </h3>
+                  <p class="text-blue-200 font-medium">
+                    Innovation in Education
+                  </p>
+                </div>
+              </div>
+              <p class="text-green-100 text-lg leading-relaxed mb-4">
+                Recognized for outstanding contributions to religious education
+                innovation and maintaining the highest standards of Islamic
+                scholarship.
+              </p>
+              <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                <div class="flex items-center text-blue-200">
+                  <i class="fas fa-medal mr-3 text-xl"></i>
+                  <span class="font-bold"
+                    >Award for Religious Education Innovation</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone Achievements -->
+          <div
+            class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-white/20"
+          >
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-white mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-landmark text-yellow-400 mr-3"></i>
+                Milestone Achievements
+              </h3>
+              <p class="text-green-200 text-lg">
+                Key accomplishments that define our journey
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+              <!-- Academic Excellence Milestone -->
+              <div class="text-center group">
+                <div
+                  class="w-16 h-16 bg-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
+                >
+                  <i class="fas fa-graduation-cap text-white text-xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-emerald-300 mb-3">
+                  Academic Excellence
+                </h4>
+                <p class="text-green-200 text-sm leading-relaxed">
+                  Consistently producing graduates who excel in both religious
+                  and secular examinations
+                </p>
+              </div>
+
+              <!-- Community Impact Milestone -->
+              <div class="text-center group">
+                <div
+                  class="w-16 h-16 bg-blue-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
+                >
+                  <i class="fas fa-hands-helping text-white text-xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-blue-300 mb-3">
+                  Community Impact
+                </h4>
+                <p class="text-green-200 text-sm leading-relaxed">
+                  Alumni serving as imams, teachers, and community leaders
+                  across Sri Lanka
+                </p>
+              </div>
+
+              <!-- International Recognition Milestone -->
+              <div class="text-center group">
+                <div
+                  class="w-16 h-16 bg-purple-400 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg"
+                >
+                  <i class="fas fa-globe text-white text-xl"></i>
+                </div>
+                <h4 class="text-xl font-bold text-purple-300 mb-3">
+                  International Recognition
+                </h4>
+                <p class="text-green-200 text-sm leading-relaxed">
+                  Students securing scholarships to prestigious Islamic
+                  universities worldwide
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section - Complete -->
+    <section
+      id="contact"
+      class="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50"
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-12 sm:mb-16">
+            <div
+              class="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 rounded-2xl mb-6"
+            >
+              <i class="fas fa-envelope text-emerald-600 text-2xl"></i>
+            </div>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            >
+              Get in <span class="text-emerald-600">Touch</span>
+            </h2>
+            <div
+              class="w-24 h-1 bg-emerald-600 mx-auto rounded-full mb-6"
+            ></div>
+            <p class="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+              Connect with us to learn more about our programs and admission
+              process
+            </p>
+          </div>
+
+          <!-- Contact Information Cards -->
+          <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Location Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-red-600"
+            >
+              <div
+                class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-map-marker-alt text-red-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Location</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Siyambalagasakotuwa<br />
+                Kurunegala District<br />
+                North Western Province<br />
+                Sri Lanka
+              </p>
+            </div>
+
+            <!-- Phone Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-blue-600"
+            >
+              <div
+                class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-phone text-blue-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Phone</h3>
+              <p class="text-gray-700 leading-relaxed">
+                +94 37 22 47895<br />
+                Call us for admission inquiries
+              </p>
+            </div>
+
+            <!-- Email Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-purple-600"
+            >
+              <div
+                class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-envelope text-purple-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Email</h3>
+              <p class="text-gray-700 leading-relaxed">
+                info@annoor.lk<br />
+                Send us your inquiries
+              </p>
+            </div>
+
+            <!-- Office Hours Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-emerald-600"
+            >
+              <div
+                class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4"
+              >
+                <i class="fas fa-clock text-emerald-600 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Office Hours</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Monday - Friday<br />
+                8:00 AM - 5:00 PM<br />
+                Saturday: By Appointment
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Methods -->
+          <div class="bg-white p-8 lg:p-12 rounded-2xl shadow-lg mb-12">
+            <div class="text-center mb-10">
+              <h3
+                class="text-3xl font-bold text-gray-900 mb-4 flex items-center justify-center"
+              >
+                <i class="fas fa-comments text-emerald-600 mr-3"></i>
+                Ways to Reach Us
+              </h3>
+              <p class="text-gray-700 text-lg">
+                Choose your preferred method of communication
+              </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div
+                class="bg-gray-50 p-6 rounded-xl text-center hover:bg-white transition-colors group"
+              >
+                <div
+                  class="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-phone text-white"></i>
+                </div>
+                <h4 class="font-semibold text-emerald-800 mb-2">Call Us</h4>
+                <p class="text-sm text-gray-600">
+                  Speak directly with our admissions team
+                </p>
+              </div>
+
+              <div
+                class="bg-gray-50 p-6 rounded-xl text-center hover:bg-white transition-colors group"
+              >
+                <div
+                  class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-envelope text-white"></i>
+                </div>
+                <h4 class="font-semibold text-blue-800 mb-2">Email Us</h4>
+                <p class="text-sm text-gray-600">
+                  Send detailed inquiries and questions
+                </p>
+              </div>
+
+              <div
+                class="bg-gray-50 p-6 rounded-xl text-center hover:bg-white transition-colors group"
+              >
+                <div
+                  class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-map text-white"></i>
+                </div>
+                <h4 class="font-semibold text-purple-800 mb-2">Visit Us</h4>
+                <p class="text-sm text-gray-600">
+                  Take a campus tour and meet our team
+                </p>
+              </div>
+
+              <div
+                class="bg-gray-50 p-6 rounded-xl text-center hover:bg-white transition-colors group"
+              >
+                <div
+                  class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform"
+                >
+                  <i class="fas fa-calendar text-white"></i>
+                </div>
+                <h4 class="font-semibold text-amber-800 mb-2">
+                  Schedule Visit
+                </h4>
+                <p class="text-sm text-gray-600">
+                  Book an appointment for consultation
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Support Services -->
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Admission Information Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-user-plus text-blue-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Admission Information
+              </h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Learn about our admission requirements, application process, and
+                enrollment procedures
+              </p>
+              <button
+                class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+              >
+                Learn More
+              </button>
+            </div>
+
+            <!-- Student Support Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-hands-helping text-emerald-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Student Support
+              </h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Comprehensive support services for current students and their
+                families
+              </p>
+              <button
+                class="bg-emerald-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
+              >
+                Get Support
+              </button>
+            </div>
+
+            <!-- Parent Portal Card -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow text-center"
+            >
+              <div
+                class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6"
+              >
+                <i class="fas fa-users text-purple-600 text-2xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">
+                Parent Portal
+              </h3>
+              <p class="text-gray-700 leading-relaxed mb-6">
+                Stay connected with your child's progress and school activities
+              </p>
+              <button
+                class="bg-purple-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-700 transition-colors"
+              >
+                Access Portal
+              </button>
+            </div>
+          </div>
+
+          <!-- CTA Banner -->
+          <div
+            class="mt-12 bg-emerald-600 p-8 lg:p-12 rounded-2xl text-center text-white shadow-xl"
+          >
+            <h3 class="text-2xl lg:text-3xl font-bold mb-4">
+              Ready to Join Us?
+            </h3>
+            <p class="text-emerald-100 text-lg mb-8 max-w-2xl mx-auto">
+              Start your journey in Islamic education today. Contact us to learn
+              more about our programs and begin the admission process.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="tel:+94372247895"
+                class="inline-flex items-center justify-center bg-white text-emerald-600 px-8 py-4 rounded-xl font-semibold hover:bg-emerald-50 transition-all shadow-lg"
+              >
+                <i class="fas fa-phone mr-2"></i>
+                Call Us Now
+              </a>
+              <a
+                href="mailto:info@annoor.lk"
+                class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-emerald-600 transition-all"
+              >
+                <i class="fas fa-envelope mr-2"></i>
+                Send Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer - Complete -->
+    <footer class="bg-gray-900 text-white relative overflow-hidden">
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="absolute top-0 right-0 w-96 h-96 bg-emerald-400 rounded-full blur-3xl transform translate-x-32 -translate-y-32"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-96 h-96 bg-green-400 rounded-full blur-3xl transform -translate-x-32 translate-y-32"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 py-16 relative z-10">
+        <!-- Main Footer Content -->
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 lg:gap-12 mb-12">
+          <!-- College Information -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center space-x-4 mb-6">
+              <div class="relative group">
+                <img
+                  src="https://placehold.co/60x60/008751/ffffff?text=AN"
+                  alt="An-Noor Logo"
+                  class="relative rounded-full w-16 h-16 shadow-2xl"
+                />
+                <div
+                  class="absolute -top-1 -right-1 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="fas fa-star text-white text-xs"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl lg:text-3xl font-bold text-emerald-300">
+                  An-Noor Arabic College
+                </h3>
+                <p class="text-emerald-300 font-medium">
+                  Excellence in Islamic Education
+                </p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+              Established in 1990, we have been nurturing Islamic scholars and
+              promoting Islamic knowledge for over three decades, serving as a
+              beacon of traditional Islamic education in Sri Lanka.
+            </p>
+
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div
+                class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 text-center"
+              >
+                <div class="text-2xl font-bold text-emerald-300 mb-1">30+</div>
+                <div class="text-sm text-gray-300">Years of Excellence</div>
+              </div>
+              <div
+                class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 text-center"
+              >
+                <div class="text-2xl font-bold text-emerald-300 mb-1">250+</div>
+                <div class="text-sm text-gray-300">Students Enrolled</div>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-3">
+              <div class="flex items-center space-x-3 text-gray-300">
+                <div
+                  class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-map-marker-alt text-emerald-400"></i>
+                </div>
+                <span>Siyambalagasakotuwa, Kurunegala District, Sri Lanka</span>
+              </div>
+              <div class="flex items-center space-x-3 text-gray-300">
+                <div
+                  class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-phone text-emerald-400"></i>
+                </div>
+                <span>+94 37 22 47895</span>
+              </div>
+              <div class="flex items-center space-x-3 text-gray-300">
+                <div
+                  class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-envelope text-emerald-400"></i>
+                </div>
+                <span>info@annoor.lk</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <div class="flex items-center mb-6">
+              <div
+                class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3"
+              >
+                <i class="fas fa-link text-white"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white">Quick Links</h4>
+            </div>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#about"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#academics"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  Academic Programs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#facilities"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  Facilities
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#administration"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  Administration
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Connect With Us -->
+          <div>
+            <div class="flex items-center mb-6">
+              <div
+                class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3"
+              >
+                <i class="fas fa-share-alt text-white"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white">Connect With Us</h4>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="flex flex-wrap gap-4 mb-6">
+              <a
+                href="#"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-facebook text-xl text-gray-300 hover:text-blue-400 transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-twitter text-xl text-gray-300 hover:text-sky-400 transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-instagram text-xl text-gray-300 hover:text-pink-400 transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-youtube text-xl text-gray-300 hover:text-red-400 transition-colors"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-700 pt-8">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+          >
+            <div class="text-center md:text-left">
+              <p class="text-gray-300">
+                &copy; 2024 An-Noor Arabic College. All rights reserved.
+              </p>
+              <p class="text-emerald-300 text-sm mt-1">
+                Nurturing Islamic Scholars for Tomorrow
+              </p>
+            </div>
+
+            <!-- Footer Navigation -->
+            <div
+              class="flex flex-wrap justify-center md:justify-end space-x-6 text-sm"
+            >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-emerald-300 transition-colors"
+                >Privacy Policy</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-emerald-300 transition-colors"
+                >Terms of Service</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-emerald-300 transition-colors"
+                >Accessibility</a
+              >
+              <a
+                href="#"
+                class="text-gray-300 hover:text-emerald-300 transition-colors"
+                >Sitemap</a
+              >
+            </div>
+          </div>
+
+          <!-- Inspirational Quote -->
+          <div
+            class="text-center mt-8 p-6 bg-emerald-900/50 rounded-2xl border border-emerald-700/30"
+          >
+            <blockquote class="text-emerald-200 italic text-lg mb-2">
+              "And whoever relies upon Allah - then He is sufficient for him."
+            </blockquote>
+            <cite class="text-emerald-300 text-sm">Quran 65:3</cite>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            // Close mobile menu
+            document.getElementById("mobile-menu").classList.add("hidden");
+          }
+        });
+      });
+
+      // Header shadow on scroll
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("header");
+        if (window.scrollY > 10) {
+          header.classList.add("shadow-lg");
+        } else {
+          header.classList.remove("shadow-lg");
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+{
+  // Global defaults
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.fontSize": 14,
+  // "window.zoomLevel": -1,
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": true
+  },
+
+  // Git
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": true,
+
+  // JavaScript
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnPaste": true
+  },
+
+  // TypeScript
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnPaste": true
+  },
+
+  // TypeScript React (TSX)
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+      "source.fixAll.eslint": "explicit"
+    },
+    "editor.formatOnPaste": true
+  },
+
+  // JSON / JSONC
+  "[json]": {
+    "editor.formatOnPaste": true
+  },
+  "[jsonc]": {
+    "editor.formatOnPaste": true
+  },
+
+  // JS/TS imports
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
