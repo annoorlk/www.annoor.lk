@@ -77,7 +77,11 @@
                 <div
                   class="w-12 h-12 lg:w-14 lg:h-14 bg-emerald-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
                 >
-                  <span class="text-white font-bold text-xl lg:text-2xl">AN</span>
+                  <img
+                    src="images/logo.jpg"
+                    alt="An-Noor Logo"
+                    class="w-full h-full p-1 rounded-xl"
+                  />
                 </div>
                 <div
                   class="absolute -top-1 -right-1 w-4 h-4 bg-amber-400 rounded-full flex items-center justify-center"
@@ -265,11 +269,7 @@
           <!-- Image - Cleaner design -->
           <div class="relative">
             <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-              <img
-                src="https://placehold.co/600x500/059669/ffffff?text=Islamic+Education"
-                alt="Islamic Education"
-                class="w-full h-auto"
-              />
+              <img src="images/award.jpg" alt="Islamic Education" class="w-full h-auto" />
               <!-- Overlay badge -->
               <div
                 class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg"
@@ -322,11 +322,7 @@
             <!-- Image -->
             <div class="relative">
               <div class="rounded-2xl overflow-hidden shadow-xl">
-                <img
-                  src="https://placehold.co/500x400/059669/ffffff?text=College+Building"
-                  alt="College Building"
-                  class="w-full h-auto"
-                />
+                <img src="images/main-building.jpg" alt="College Building" class="w-full h-auto" />
               </div>
               <!-- Badge -->
               <div class="absolute top-4 left-4 bg-white px-4 py-2 rounded-full shadow-lg">
@@ -573,12 +569,24 @@
           <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
             <!-- Map Section -->
             <div class="relative">
-              <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl shadow-xl p-8">
-                <img
-                  src="https://placehold.co/500x350/4a5568/ffffff?text=Sri+Lanka+Map"
-                  alt="Location Map"
-                  class="w-full h-64 object-cover rounded-xl shadow-lg"
-                />
+              <div
+                class="bg-gradient-to-br from-emerald-100 to-emerald-300 rounded-2xl shadow-xl p-4"
+              >
+                <a
+                  href="#"
+                  onclick="
+                    window.open(
+                      'https://www.google.com/search?q=annoor+arabic+college+direction+from+my+location',
+                      '_blank',
+                    )
+                  "
+                >
+                  <img
+                    src="images/map.jpg"
+                    alt="Location Map"
+                    class="w-full h-80 object-cover rounded-xl shadow-lg"
+                  />
+                </a>
 
                 <!-- Location Pin -->
                 <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -1218,6 +1226,7 @@
                 Well-equipped, air-conditioned classrooms with modern teaching aids and comfortable
                 learning environment
               </p>
+              <img src="images/classroom.jpg" alt="Classroom" class="mt-4 rounded-lg shadow-md" />
             </div>
 
             <!-- Mosque -->
@@ -1234,6 +1243,7 @@
                 Beautiful two-story mosque for daily prayers, spiritual development, and
                 congregational worship
               </p>
+              <img src="images/mosque.jpg" alt="Mosque" class="mt-4 rounded-lg shadow-md" />
             </div>
 
             <!-- Dormitory -->
@@ -1248,6 +1258,7 @@
                 Safe, secure three-story boarding facilities with all necessary amenities for
                 student comfort
               </p>
+              <img src="images/dormitory.jpg" alt="Dormitory" class="mt-4 rounded-lg shadow-md" />
             </div>
 
             <!-- Library -->
@@ -1264,10 +1275,11 @@
                 Extensive collection of Islamic and academic literature in multiple languages for
                 research and study
               </p>
+              <img src="images/library.jpg" alt="Library" class="mt-4 rounded-lg shadow-md" />
             </div>
 
             <!-- Dining -->
-            <div
+            <!-- <div
               class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-teal-600"
             >
               <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mb-6">
@@ -1278,6 +1290,21 @@
                 Spacious two-story dining area serving nutritious, wholesome meals prepared under
                 hygienic conditions
               </p>
+              <img src="images/dining.jpg" alt="Dining" class="mt-4 rounded-lg shadow-md" />
+            </div> -->
+            <!-- Science Lab -->
+            <div
+              class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-l-4 border-teal-600"
+            >
+              <div class="w-16 h-16 bg-teal-100 rounded-2xl flex items-center justify-center mb-6">
+                <i class="fas fa-utensils text-3xl text-teal-600"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Science Lab</h3>
+              <p class="text-gray-700 leading-relaxed">
+                Fully equipped laboratory for practical science education, fostering hands-on
+                learning and experimentation
+              </p>
+              <img src="images/lab.jpg" alt="Dining" class="mt-4 rounded-lg shadow-md" />
             </div>
 
             <!-- Computer Lab -->
@@ -1294,6 +1321,11 @@
                 Modern technology center equipped with latest computers for digital literacy and
                 technical skills training
               </p>
+              <img
+                src="images/computer-lab.jpg"
+                alt="Computer Lab"
+                class="mt-4 rounded-lg shadow-md"
+              />
             </div>
           </div>
 
@@ -1488,9 +1520,14 @@
             <div class="grid lg:grid-cols-2 gap-8 items-center">
               <div>
                 <div
-                  class="w-48 h-48 mx-auto bg-emerald-100 rounded-2xl flex items-center justify-center"
+                  class="w-80 h-80 mx-auto bg-emerald-100 rounded-2xl flex items-center justify-center"
                 >
-                  <i class="fas fa-user-tie text-6xl text-emerald-600"></i>
+                  <!-- <i class="fas fa-user-tie text-6xl text-emerald-600"></i> -->
+                  <img
+                    src="images/principal.jpg"
+                    alt="Principal"
+                    class="w-full h-full object-cover rounded-2xl shadow-md"
+                  />
                 </div>
               </div>
               <div>
@@ -2117,7 +2154,7 @@
               <p class="text-gray-700 leading-relaxed">
                 Monday - Friday<br />
                 8:00 AM - 5:00 PM<br />
-                Saturday: By Appointment
+                Saturday, Sunday: By Appointment
               </p>
             </div>
           </div>
@@ -2297,7 +2334,7 @@
             <div class="flex items-center space-x-4 mb-6">
               <div class="relative group">
                 <img
-                  src="https://placehold.co/60x60/008751/ffffff?text=AN"
+                  src="images/logo.jpg"
                   alt="An-Noor Logo"
                   class="relative rounded-full w-16 h-16 shadow-2xl"
                 />
