@@ -2,8 +2,8 @@ import os
 from PIL import Image
 
 # Settings
-INPUT_FOLDER = "images"
-OUTPUT_FOLDER = "compressed_images"
+INPUT_FOLDER = "images_uncompressed"
+OUTPUT_FOLDER = "images"
 QUALITY = 70        # 0-100 (lower = more compression)
 MAX_WIDTH = 1200    # Resize width (None to skip)
 
