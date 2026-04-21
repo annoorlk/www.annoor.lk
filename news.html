@@ -1,0 +1,968 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News & Updates - An-Noor Arabic College</title>
+    <meta
+      name="description"
+      content="Latest news, announcements, and updates from An-Noor Arabic College"
+    />
+    <link rel="icon" href="https://www2.annoor.lk/images/logo.jpg" type="image/jpg" />
+
+    <meta property="og:title" content="News & Updates - An-Noor Arabic College" />
+    <meta
+      property="og:description"
+      content="Latest news, announcements, and updates from An-Noor Arabic College"
+    />
+    <meta property="og:image" content="https://www2.annoor.lk/images/logo.jpg" />
+    <meta property="og:url" content="https://www2.annoor.lk/news.html" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="News & Updates - An-Noor Arabic College" />
+    <meta
+      name="twitter:description"
+      content="Latest news, announcements, and updates from An-Noor Arabic College"
+    />
+    <meta name="twitter:image" content="https://www2.annoor.lk/images/logo.jpg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+      .animate-fadeInUp {
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #059669;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #047857;
+      }
+
+      .news-card:hover .news-card-image {
+        transform: scale(1.05);
+      }
+      .news-card-image {
+        transition: transform 0.4s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 font-sans antialiased">
+    <!-- Sticky Header -->
+    <header id="header" class="sticky top-0 z-50 bg-white shadow-md transition-all duration-300">
+      <div class="container mx-auto px-4">
+        <div class="py-3 lg:py-4">
+          <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center space-x-3 group">
+              <div class="relative">
+                <div
+                  class="w-12 h-12 lg:w-14 lg:h-14 bg-emerald-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"
+                >
+                  <img
+                    src="images/logo.jpg"
+                    alt="An-Noor Logo"
+                    class="w-full h-full p-1 rounded-xl"
+                  />
+                </div>
+                <div
+                  class="absolute -top-1 -right-1 w-4 h-4 bg-amber-400 rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-star text-white text-xs"></i>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-lg lg:text-xl font-bold text-gray-800 leading-tight">
+                  An-Noor Arabic College
+                </h1>
+                <p class="text-xs lg:text-sm text-emerald-600 font-medium">Since 1990</p>
+              </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center space-x-1">
+              <a
+                href="index.html#about"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+              </a>
+              <a
+                href="index.html#academics"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-graduation-cap"></i>
+                <span>Academics</span>
+              </a>
+              <a
+                href="index.html#facilities"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-building"></i>
+                <span>Facilities</span>
+              </a>
+              <a
+                href="index.html#administration"
+                class="flex items-center space-x-2 px-4 py-2 text-gray-700 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-all duration-200 font-medium"
+              >
+                <i class="fas fa-users-cog"></i>
+                <span>Administration</span>
+              </a>
+              <a
+                href="news.html"
+                class="flex items-center space-x-2 px-4 py-2 text-emerald-600 bg-emerald-50 rounded-lg font-semibold"
+              >
+                <i class="fas fa-newspaper"></i>
+                <span>News</span>
+              </a>
+              <a
+                href="index.html#contact"
+                class="flex items-center space-x-2 ml-2 bg-emerald-600 text-white hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-semibold shadow-sm hover:shadow-md transition-all duration-200"
+              >
+                <i class="fas fa-envelope"></i>
+                <span>Contact Us</span>
+              </a>
+            </nav>
+
+            <!-- Mobile menu button -->
+            <button
+              id="mobile-menu-button"
+              class="lg:hidden text-gray-700 p-2 hover:bg-gray-100 rounded-lg transition-colors"
+              aria-label="Toggle menu"
+            >
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <nav id="mobile-menu" class="hidden lg:hidden pb-4 animate-fadeInUp">
+          <div class="bg-gray-50 rounded-xl p-4 space-y-2">
+            <a
+              href="index.html#about"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-info-circle w-5"></i>
+              <span>About</span>
+            </a>
+            <a
+              href="index.html#academics"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-graduation-cap w-5"></i>
+              <span>Academics</span>
+            </a>
+            <a
+              href="index.html#facilities"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-building w-5"></i>
+              <span>Facilities</span>
+            </a>
+            <a
+              href="index.html#administration"
+              class="flex items-center space-x-3 py-3 px-4 text-gray-700 hover:text-emerald-600 hover:bg-white rounded-lg transition-all font-medium"
+            >
+              <i class="fas fa-users-cog w-5"></i>
+              <span>Administration</span>
+            </a>
+            <a
+              href="news.html"
+              class="flex items-center space-x-3 py-3 px-4 text-emerald-600 bg-emerald-50 rounded-lg font-semibold"
+            >
+              <i class="fas fa-newspaper w-5"></i>
+              <span>News & Updates</span>
+            </a>
+            <a
+              href="index.html#contact"
+              class="flex items-center justify-center space-x-2 py-3 px-4 bg-emerald-600 text-white hover:bg-emerald-700 rounded-lg transition-all font-medium text-center"
+            >
+              <i class="fas fa-envelope"></i>
+              <span>Contact Us</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="bg-white border-b border-gray-100 py-6">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center gap-4">
+          <div
+            class="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center flex-shrink-0"
+          >
+            <i class="fas fa-newspaper text-emerald-600"></i>
+          </div>
+          <div>
+            <nav class="flex items-center space-x-2 text-xs text-gray-400 mb-0.5">
+              <a href="index.html" class="hover:text-emerald-600 transition-colors">Home</a>
+              <i class="fas fa-chevron-right text-xs"></i>
+              <span class="text-emerald-600">News & Updates</span>
+            </nav>
+            <h1 class="text-2xl font-bold text-gray-900">
+              News & <span class="text-emerald-600">Updates</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Content -->
+    <section class="py-8">
+      <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+          <!-- Featured News -->
+          <div id="featured-section">
+            <div class="flex items-center mb-8">
+              <div
+                class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center mr-3"
+              >
+                <i class="fas fa-star text-amber-500"></i>
+              </div>
+              <h2 class="text-2xl font-bold text-gray-900">Featured</h2>
+            </div>
+
+            <!-- Featured Article -->
+            <div
+              class="news-item bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden mb-12"
+            >
+              <div class="grid lg:grid-cols-2">
+                <div
+                  class="overflow-hidden bg-emerald-100 flex items-center justify-center min-h-56 lg:min-h-full"
+                >
+                  <div class="text-center p-8">
+                    <div
+                      class="w-24 h-24 bg-emerald-200 rounded-full flex items-center justify-center mx-auto mb-4"
+                    >
+                      <i class="fas fa-quran text-emerald-600 text-4xl"></i>
+                    </div>
+                    <p class="text-emerald-700 font-semibold text-lg">Quranic Du'a Competition</p>
+                    <p class="text-emerald-600 text-sm mt-1">100+ Students · 10 Teams</p>
+                  </div>
+                </div>
+                <div class="p-8 lg:p-10 flex flex-col justify-center">
+                  <div class="flex items-center gap-3 mb-4">
+                    <span
+                      class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-bold uppercase tracking-wide"
+                      >Event</span
+                    >
+                    <span
+                      class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold uppercase tracking-wide"
+                      >Featured</span
+                    >
+                  </div>
+                  <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 leading-snug">
+                    Grand Quranic Du'a Competition for Hifz Students
+                  </h3>
+                  <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                    Alhamdulillah! A grand Quranic Du'a Competition was successfully held for the
+                    Hifz students of Annoor Arabic College — 100+ Students, 10 Teams, a truly
+                    memorable event! The competition was graced by the presence of the Principal,
+                    Vice Principal, and esteemed Ustads. May Allah bless all the participants,
+                    teachers, and organizers.
+                  </p>
+                  <div class="flex items-center text-gray-400 text-sm">
+                    <i class="fas fa-calendar mr-2"></i>
+                    <span>14 March 2026</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- News Grid -->
+          <div class="flex items-center mb-8">
+            <div
+              class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center mr-3"
+            >
+              <i class="fas fa-newspaper text-emerald-600"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900">Latest News</h2>
+          </div>
+
+          <div id="news-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: HR Foundation All-Island Winners (1 Feb 2026) -->
+            <article
+              class="news-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col"
+            >
+              <div class="overflow-hidden bg-yellow-50 h-48 flex items-center justify-center">
+                <div class="text-center p-6">
+                  <div
+                    class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-medal text-yellow-600 text-2xl"></i>
+                  </div>
+                  <p class="text-yellow-700 font-medium text-sm">HR Foundation</p>
+                  <p class="text-yellow-600 text-xs mt-1">All-Island Competition</p>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <span
+                  class="px-2.5 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-bold uppercase tracking-wide mb-3 w-fit"
+                  >Achievement</span
+                >
+                <h3 class="text-lg font-bold text-gray-900 mb-3 leading-snug">
+                  All-Island Qur'an Memorization Final — Our Students Excel
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed flex-grow mb-4">
+                  Alhamdulillah! In the HR Foundation's All-Island Qur'an Memorization Competition
+                  final round, our students secured top positions — Atiqurrahman placed 2nd in the
+                  10 Juz category and Umair placed 8th in the 30 Juz category.
+                </p>
+                <div
+                  class="flex items-center text-gray-400 text-xs mt-auto pt-4 border-t border-gray-100"
+                >
+                  <i class="fas fa-calendar mr-1.5"></i>
+                  <span>1 February 2026</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2: Students selected for All-Island Final (31 Dec 2025) -->
+            <article
+              class="news-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col"
+            >
+              <div class="overflow-hidden bg-emerald-50 h-48 flex items-center justify-center">
+                <div class="text-center p-6">
+                  <div
+                    class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-star text-emerald-600 text-2xl"></i>
+                  </div>
+                  <p class="text-emerald-700 font-medium text-sm">Proud Achievement</p>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <span
+                  class="px-2.5 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-wide mb-3 w-fit"
+                  >Achievement</span
+                >
+                <h3 class="text-lg font-bold text-gray-900 mb-3 leading-snug">
+                  Three Students Selected for Grand Holy Qur'an Competition All-Island Final
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed flex-grow mb-4">
+                  At the Grand Holy Qur'an Memorization Competition by the Department of Muslim
+                  Religious and Cultural Affairs, three students — Ammar Dilshan, Nusri Riyaz, and
+                  Mu'ath Jawfar — were selected for the All-Island Final at Old Mount Lavinia Hotel,
+                  Colombo.
+                </p>
+                <div
+                  class="flex items-center text-gray-400 text-xs mt-auto pt-4 border-t border-gray-100"
+                >
+                  <i class="fas fa-calendar mr-1.5"></i>
+                  <span>31 December 2025</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3: HR Foundation Provincial Competition (3 Dec 2025) -->
+            <article
+              class="news-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col"
+            >
+              <div class="overflow-hidden bg-blue-50 h-48 flex items-center justify-center">
+                <div class="text-center p-6">
+                  <div
+                    class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-trophy text-blue-600 text-2xl"></i>
+                  </div>
+                  <p class="text-blue-700 font-medium text-sm">Provincial Competition</p>
+                  <p class="text-blue-600 text-xs mt-1">North Western & North Central</p>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <span
+                  class="px-2.5 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wide mb-3 w-fit"
+                  >Achievement</span
+                >
+                <h3 class="text-lg font-bold text-gray-900 mb-3 leading-snug">
+                  AAC Hosts & Wins Provincial Qur'an Memorization Competition
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed flex-grow mb-4">
+                  The HR Foundation provincial selection rounds were held at our college campus. Our
+                  students won 1st place in the 30 Juz and 10 Juz categories — Umar Fairuz (30 Juz)
+                  and Atiqurrahman (10 Juz) — both advancing to the All-Island final.
+                </p>
+                <div
+                  class="flex items-center text-gray-400 text-xs mt-auto pt-4 border-t border-gray-100"
+                >
+                  <i class="fas fa-calendar mr-1.5"></i>
+                  <span>3 December 2025</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4: 2026 Admission Interview conducted (2 Nov 2025) -->
+            <article
+              class="news-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col"
+            >
+              <div class="overflow-hidden bg-purple-50 h-48 flex items-center justify-center">
+                <div class="text-center p-6">
+                  <div
+                    class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-user-check text-purple-600 text-2xl"></i>
+                  </div>
+                  <p class="text-purple-700 font-medium text-sm">Admissions 2026</p>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <span
+                  class="px-2.5 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-bold uppercase tracking-wide mb-3 w-fit"
+                  >Admissions</span
+                >
+                <h3 class="text-lg font-bold text-gray-900 mb-3 leading-snug">
+                  2026 Student Admission Interview Successfully Conducted
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed flex-grow mb-4">
+                  The interview session for new students of the 2026 batch was successfully
+                  conducted. Many students took part and made the event truly remarkable.
+                  Alhamdulillah, a new generation of scholars begins their journey.
+                </p>
+                <div
+                  class="flex items-center text-gray-400 text-xs mt-auto pt-4 border-t border-gray-100"
+                >
+                  <i class="fas fa-calendar mr-1.5"></i>
+                  <span>2 November 2025</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5: Arabic Day Prize-Giving (27 Sep 2025) -->
+            <article
+              class="news-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col"
+            >
+              <div class="overflow-hidden bg-amber-50 h-48 flex items-center justify-center">
+                <div class="text-center p-6">
+                  <div
+                    class="w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-award text-amber-600 text-2xl"></i>
+                  </div>
+                  <p class="text-amber-700 font-medium text-sm">Arabic Day</p>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <span
+                  class="px-2.5 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold uppercase tracking-wide mb-3 w-fit"
+                  >Event</span
+                >
+                <h3 class="text-lg font-bold text-gray-900 mb-3 leading-snug">
+                  Prize-Giving Ceremony of the Arabic Day Event
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed flex-grow mb-4">
+                  The Prize-Giving Ceremony of the Arabic Day Event was held at the college,
+                  celebrating student excellence in Arabic language and Islamic studies.
+                  Distinguished guests and scholars attended the memorable occasion.
+                </p>
+                <div
+                  class="flex items-center text-gray-400 text-xs mt-auto pt-4 border-t border-gray-100"
+                >
+                  <i class="fas fa-calendar mr-1.5"></i>
+                  <span>27 September 2025</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6: Admissions Open 2026 (9 Oct 2025) -->
+            <article
+              class="news-card bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden flex flex-col"
+            >
+              <div class="overflow-hidden bg-teal-50 h-48 flex items-center justify-center">
+                <div class="text-center p-6">
+                  <div
+                    class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-3"
+                  >
+                    <i class="fas fa-user-plus text-teal-600 text-2xl"></i>
+                  </div>
+                  <p class="text-teal-700 font-medium text-sm">Admissions Open</p>
+                  <p class="text-teal-600 text-xs mt-1">Academic Year 2026</p>
+                </div>
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <span
+                  class="px-2.5 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-bold uppercase tracking-wide mb-3 w-fit"
+                  >Admissions</span
+                >
+                <h3 class="text-lg font-bold text-gray-900 mb-3 leading-snug">
+                  Admissions Now Open for Academic Year 2026
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed flex-grow mb-4">
+                  Annoor Arabic College is accepting applications for 2026. Offering Al-Quran
+                  Memorization (Al-Hafil), Islamic Studies (Al-Aalim), and G.C.E. O/L & A/L
+                  (Arts/ICT, Maths, Biology) for Grades 6–13. Apply now at annoor.lk.
+                </p>
+                <div
+                  class="flex items-center justify-between mt-auto pt-4 border-t border-gray-100"
+                >
+                  <div class="flex items-center text-gray-400 text-xs">
+                    <i class="fas fa-calendar mr-1.5"></i>
+                    <span>9 October 2025</span>
+                  </div>
+                  <a
+                    target="_blank"
+                    href="https://forms.gle/djvGKiTsi5cUbQ5bA"
+                    class="text-emerald-600 text-sm font-semibold flex items-center hover:text-emerald-700"
+                  >
+                    Apply <i class="fas fa-arrow-right ml-1 text-xs"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facebook Feed Section -->
+    <section class="py-10 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex items-center mb-8">
+            <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+              <i class="fab fa-facebook text-blue-600"></i>
+            </div>
+            <h2 class="text-2xl font-bold text-gray-900">Facebook Posts</h2>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-8 items-start">
+            <!-- Left column: placeholder/info -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden h-full flex flex-col">
+              <img
+                src="images/award.jpg"
+                alt="Annoor Arabic College"
+                class="w-full object-cover"
+                style="max-height: 320px"
+              />
+              <div class="p-8 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                  <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                    <i class="fab fa-facebook text-blue-600 text-xl"></i>
+                  </div>
+                  <div>
+                    <p class="font-bold text-gray-900">Annoor Arabic College</p>
+                    <p class="text-sm text-gray-500">5.3K followers</p>
+                  </div>
+                </div>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                  Follow our Facebook page to stay up to date with the latest news, events,
+                  achievements, and announcements from Annoor Arabic College.
+                </p>
+                <div class="space-y-3 mb-8">
+                  <div class="flex items-center text-gray-600 text-sm">
+                    <i class="fas fa-check-circle text-emerald-500 mr-3"></i>
+                    <span>Live event updates and photos</span>
+                  </div>
+                  <div class="flex items-center text-gray-600 text-sm">
+                    <i class="fas fa-check-circle text-emerald-500 mr-3"></i>
+                    <span>Student achievement announcements</span>
+                  </div>
+                  <div class="flex items-center text-gray-600 text-sm">
+                    <i class="fas fa-check-circle text-emerald-500 mr-3"></i>
+                    <span>Admission notices and reminders</span>
+                  </div>
+                  <div class="flex items-center text-gray-600 text-sm">
+                    <i class="fas fa-check-circle text-emerald-500 mr-3"></i>
+                    <span>Competition results and highlights</span>
+                  </div>
+                </div>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/annoorlk"
+                  class="mt-auto inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all shadow-md hover:shadow-lg"
+                >
+                  <i class="fab fa-facebook mr-2"></i>
+                  Follow on Facebook
+                </a>
+              </div>
+            </div>
+
+            <!-- Right column: Facebook iframe -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div id="fb-wrapper" style="width: 100%; overflow: hidden; position: relative">
+                <iframe
+                  id="fb-iframe"
+                  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fannoorlk&tabs=timeline&width=500&height=700&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false"
+                  style="
+                    border: none;
+                    overflow: hidden;
+                    width: 500px;
+                    height: 700px;
+                    transform-origin: top left;
+                    display: block;
+                  "
+                  scrolling="no"
+                  frameborder="0"
+                  allowfullscreen="true"
+                  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stay Connected CTA -->
+    <section
+      class="py-12 sm:py-16 bg-gradient-to-br from-emerald-700 via-emerald-600 to-green-700 text-white relative overflow-hidden"
+    >
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-yellow-400/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl"></div>
+      </div>
+      <div class="container mx-auto px-4 relative z-10 text-center">
+        <div class="max-w-2xl mx-auto">
+          <div
+            class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6"
+          >
+            <i class="fas fa-share-alt text-white text-2xl"></i>
+          </div>
+          <h2 class="text-3xl font-bold mb-4">Stay Connected</h2>
+          <p class="text-emerald-100 text-lg mb-8 leading-relaxed">
+            Follow us on social media to receive instant updates and be a part of our growing
+            community.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a
+              target="_blank"
+              href="https://facebook.com/annoor.lk"
+              class="flex items-center space-x-2 bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-3 rounded-xl font-semibold hover:bg-white/20 transition-all"
+            >
+              <i class="fab fa-facebook text-blue-300"></i>
+              <span>Facebook</span>
+            </a>
+            <a
+              href="index.html#contact"
+              class="flex items-center space-x-2 bg-white text-emerald-700 px-6 py-3 rounded-xl font-semibold hover:bg-emerald-50 transition-all shadow-lg"
+            >
+              <i class="fas fa-envelope"></i>
+              <span>Contact Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white relative overflow-hidden">
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="absolute top-0 right-0 w-96 h-96 bg-emerald-400 rounded-full blur-3xl transform translate-x-32 -translate-y-32"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-96 h-96 bg-green-400 rounded-full blur-3xl transform -translate-x-32 translate-y-32"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 py-16 relative z-10">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-8 lg:gap-12 mb-12">
+          <!-- College Info -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center space-x-4 mb-6">
+              <div class="relative">
+                <img
+                  src="images/logo.jpg"
+                  alt="An-Noor Logo"
+                  class="relative rounded-full w-16 h-16 shadow-2xl"
+                />
+                <div
+                  class="absolute -top-1 -right-1 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg"
+                >
+                  <i class="fas fa-star text-white text-xs"></i>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-2xl lg:text-3xl font-bold text-emerald-300">
+                  An-Noor Arabic College
+                </h3>
+                <p class="text-emerald-300 font-medium">Excellence in Islamic Education</p>
+              </div>
+            </div>
+            <p class="text-gray-300 text-lg leading-relaxed mb-6">
+              Established in 1990, we have been nurturing Islamic scholars and promoting Islamic
+              knowledge for over three decades, serving as a beacon of traditional Islamic education
+              in Sri Lanka.
+            </p>
+            <div class="grid grid-cols-2 gap-4 mb-6">
+              <div
+                class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 text-center"
+              >
+                <div class="text-2xl font-bold text-emerald-300 mb-1">30+</div>
+                <div class="text-gray-400 text-sm">Years</div>
+              </div>
+              <div
+                class="bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 text-center"
+              >
+                <div class="text-2xl font-bold text-emerald-300 mb-1">600+</div>
+                <div class="text-gray-400 text-sm">Graduates</div>
+              </div>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center space-x-3 text-gray-300">
+                <div
+                  class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-map-marker-alt text-emerald-400"></i>
+                </div>
+                <span>Narammala-Wariyapola Road, Wariyapola</span>
+              </div>
+              <div class="flex items-center space-x-3 text-gray-300">
+                <div
+                  class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-phone text-emerald-400"></i>
+                </div>
+                <span>+94 37 22 47895</span>
+              </div>
+              <div class="flex items-center space-x-3 text-gray-300">
+                <div
+                  class="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center"
+                >
+                  <i class="fas fa-envelope text-emerald-400"></i>
+                </div>
+                <span>info@annoor.lk</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <div class="flex items-center mb-6">
+              <div
+                class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3"
+              >
+                <i class="fas fa-link text-white"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white">Quick Links</h4>
+            </div>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="index.html#about"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="index.html#academics"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  Academic Programs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="index.html#facilities"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  Facilities
+                </a>
+              </li>
+              <li>
+                <a
+                  href="index.html#administration"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  Administration
+                </a>
+              </li>
+              <li>
+                <a
+                  href="news.html"
+                  class="group flex items-center text-emerald-300 font-semibold py-2"
+                >
+                  <i class="fas fa-chevron-right mr-3 text-emerald-400"></i>
+                  News & Updates
+                </a>
+              </li>
+              <li>
+                <a
+                  href="index.html#contact"
+                  class="group flex items-center text-gray-300 hover:text-emerald-300 transition-all py-2"
+                >
+                  <i
+                    class="fas fa-chevron-right mr-3 text-emerald-400 group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Connect With Us -->
+          <div>
+            <div class="flex items-center mb-6">
+              <div
+                class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center mr-3"
+              >
+                <i class="fas fa-share-alt text-white"></i>
+              </div>
+              <h4 class="text-xl font-bold text-white">Connect With Us</h4>
+            </div>
+            <div class="flex flex-wrap gap-4 mb-6">
+              <a
+                target="_blank"
+                href="https://facebook.com/annoor.lk"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-facebook text-xl text-gray-300 hover:text-blue-400 transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-twitter text-xl text-gray-300 hover:text-sky-400 transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-instagram text-xl text-gray-300 hover:text-pink-400 transition-colors"
+                ></i>
+              </a>
+              <a
+                href="#"
+                class="bg-white/10 backdrop-blur-sm p-3 rounded-xl border border-white/20 hover:bg-white/20 transition-all hover:scale-110"
+              >
+                <i
+                  class="fab fa-youtube text-xl text-gray-300 hover:text-red-400 transition-colors"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-700 pt-8">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+          >
+            <div class="text-center md:text-left">
+              <p class="text-gray-300">&copy; 2024 An-Noor Arabic College. All rights reserved.</p>
+              <p class="text-emerald-300 text-sm mt-1">Nurturing Islamic Scholars for Tomorrow</p>
+            </div>
+            <div class="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
+              <a href="#" class="text-gray-300 hover:text-emerald-300 transition-colors"
+                >Privacy Policy</a
+              >
+              <a href="#" class="text-gray-300 hover:text-emerald-300 transition-colors"
+                >Terms of Service</a
+              >
+              <a href="#" class="text-gray-300 hover:text-emerald-300 transition-colors"
+                >Accessibility</a
+              >
+              <a href="#" class="text-gray-300 hover:text-emerald-300 transition-colors">Sitemap</a>
+            </div>
+          </div>
+
+          <!-- Inspirational Quote -->
+          <div
+            class="text-center mt-8 p-6 bg-emerald-900/50 rounded-2xl border border-emerald-700/30"
+          >
+            <blockquote class="text-emerald-200 italic text-lg mb-2">
+              "And whoever relies upon Allah - then He is sufficient for him."
+            </blockquote>
+            <cite class="text-emerald-300 text-sm">Quran 65:3</cite>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("mobile-menu-button").addEventListener("click", function () {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      });
+
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("header");
+        if (window.scrollY > 10) {
+          header.classList.add("shadow-lg");
+        } else {
+          header.classList.remove("shadow-lg");
+        }
+      });
+
+      function scaleFbIframe() {
+        const wrapper = document.getElementById("fb-wrapper");
+        const iframe = document.getElementById("fb-iframe");
+        if (!wrapper || !iframe) return;
+        const containerWidth = wrapper.offsetWidth;
+        const scale = containerWidth / 500;
+        iframe.style.transform = "scale(" + scale + ")";
+        wrapper.style.height = Math.round(700 * scale) + "px";
+      }
+      scaleFbIframe();
+      window.addEventListener("resize", scaleFbIframe);
+    </script>
+  </body>
+</html>

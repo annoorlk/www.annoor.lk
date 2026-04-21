@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- ... -->
+    <script src="https://unpkg.com/@grapesjs/studio-sdk/dist/index.umd.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/@grapesjs/studio-sdk/dist/style.css" />
+  </head>
+  <body>
+    <div id="studio-editor" style="height: 100dvh"></div>
+    <script>
+      GrapesJsStudioSDK.createStudioEditor({
+        root: "#studio-editor",
+        licenseKey: "fbe1b5665a1142ab846ff25f354cae01468a9176a7874bbe8658a9aff7d0ffca",
+        project: {
+          type: "web",
+          id: "aslamanver",
+        },
+        identity: {
+          id: "aslamanver",
+        },
+        assets: {
+          storageType: "local",
+        },
+        storage: {
+          type: "local",
+          autosaveChanges: 100,
+          autosaveIntervalMs: 10000,
+        },
+      });
+    </script>
+  </body>
+</html>
